@@ -1,0 +1,803 @@
+-------- compile time: May 31 2021, 11:19:42 --------
+-------- software version: V1.04.11_Tuya-210531 --------
+isvp chip 121DA
+gbj read domecfg
+{"adc":{"dton":900,"ntod":400,"polarity":0},"audio":{"type":2},"event":{"autotrace":0,"enable":1,"type":1,"vdir_trace":0},"image":{"mirror":0},"led":{"irlevel":0,"type":1,"wlevel":0},"motor":{"hdir":1,"hlocat":50,"hmaxstep":3250,"hspeed":300,"vdir":0,"vlocat":50,"vmaxstep":1150,"vspeed":200},"resolution":{"main":3}}
+[mainItem]=adc
+dton=900
+ntod=400
+polarity=0
+[mainItem]=audio
+type=2
+[mainItem]=event
+enable=1
+type=1
+autotrace=0
+vdir_trace=0
+[mainItem]=image
+mirror=0
+[mainItem]=led
+irlevel=0
+type=1
+wlevel=0
+[mainItem]=motor
+hdir=1
+hmaxstep=3250
+hspeed=300
+hlocat=50
+vdir=0
+vmaxstep=1150
+vspeed=200
+vlocat=50
+[mainItem]=resolution
+main=3
+audio_type(2)
+res_main(3)
+g_dualSupport=1 dual_gpioCfgInfo=0 gVoiceType=2
+
+hi3518e = 0, hi3516a_board = 0, hi3518ev200 = 0, hi3516cv300 = 0, hi3519V101 = 0, hi3516ev200 = 0
+gk7102 = 0
+gk7101 = 0
+hi3516cv100 = 0
+hi3516cv500 = 0
+mstar = 0
+isvptx0 = 4
+ICEtype = 0
+DeviceTypeOffset = 0
+
+default max pan 3250, tilt 1150
+device type is V6202IR-SC2332 DeviceID 159
+WIFI ON
+
+gSelfAlgType= 0 hisi_ir_flag= 0 gOnlyNetCtrl= 0
+
+____gHardwareversion: 0
+sha_ok is sha_ok
+!!!!!! APP : sha_204 check passed !!!!!!
+== IR module will not be called in the device. ==
+== prepared zoom lens will not be used ==
+== prepared zoom lens will not be used ==
+
+=== get device_type:1, device_af:0, device_ir:0, lens_type:4 sensor_type:1 ===
+
+Alarm_In_Num = 1 , Alarm_Out_Num = 1
+hisi test : mw_server pid = 211
+hiapp audioEnable 1, audioFormat 0, audioInput 5, audioOutput 7, audioSampleRate 8000
+get /mnt/flash/data/SysRebootInfo info failure .
+get /mnt/flash/data/WifiBitrateInfo info failure .
+get /mnt/flash/data/AFMoveInfo info failure .
+default Zoomspeed 4, iMultiple 0
+get /mnt/flash/data/AFMoveInfo info failure .
+get /mnt/flash/data/MlsInfo info failure .
+Fun:FunInitSystem Line:456 Initialize SysParamInit OK.
+!!!!!!ntp timezone change :timezone=13  daylight=0
+bufsize[0] 512000
+bufsize[1] 204800
+bufsize[2] 204800
+hiapp max frame size [0]:512000 [1]131072 [2]204800
+hank_Play_AudioFile pri 3, file /mnt/flash/Server/resource/audio/en/alarm2.g711u, repeat 1, duration -1, block 1
+hank_Play_AudioFile_now begin /mnt/flash/Server/resource/audio/en/alarm2.g711u
+hank_Play_AudioFile_now /mnt/flash/Server/resource/audio/en/alarm2.g711u end
+total_data_len 20791, play_time 2500, audio_time 2598
+dhcp flg = 1
+dhcp_enable = 1
+DHCP enabled~~~~~~~~
+------DDNS_config_params
+set_setstat
+insmod: can't insert '/mnt/flash/Server/resource/wifi/hi3881.ko': File exists
+[Wifi_build_scan_wpaConfig]--[1073] leftNums === 0 offsetValue === -15
+killall: udhcpc: no process killed
+killall: udhcpd: no process killed
+killall: hostapd: no process killed
+Successfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+[wlan_wpa_open_connection]--[691] gs_sta.s_fd 3 local.sun_path /var/run/wpa_supplicant/wpa_17584_0
+[wlan_wpa_open_connection]--[700] gs_sta.s_fd 3 remote.sun_path /var/run/wpa_supplicant/wlan0
+
+==============================================================
+Scan List:
+  ID / SSID / MAC Address / Channel / Security / Signal Level
+  00  CCTXIPC  68:07:15:c4:fd:97  11  WPA_WPA2_PSK  56
+  01  CCTJ  40:0d:10:58:0f:29  6  WPA_WPA2_PSK  52
+  02  CCTJX  b0:19:21:d5:41:9c  2  WPA_WPA2_PSK  43
+  03  REMOTE77abrh  00:1d:c9:07:95:b5  3  WPA_WPA2_PSK  40
+  04  KindratsPortable  f2:c5:2b:cc:8e:2a  8  WPA_WPA2_PSK  29
+  05  EE-533WQK  a0:2d:db:28:f5:42  1  WPA_WPA2_PSK  28
+  06  \x00\x00\x00\x00\x00\x00\x00\x00\x00  7a:22:f3:88:62:33  11  WPA_WPA2_PSK  26
+  07  BT-7RC2GZ  4c:22:f3:88:62:37  11  WPA_WPA2_PSK  23
+  08  SKYLD1XH  d4:da:cd:cb:00:12  11  WPA_WPA2_PSK  22
+  09  SKYLD1XH  3c:89:94:4b:37:2a  6  WPA_WPA2_PSK  20
+  10  EE WiFi  0a:2d:db:28:f5:43  1  OPEN  27
+  11  EE WiFi  7a:22:f3:88:62:30  11  OPEN  26
+
+==============================================================
+Scan List:
+  ID / SSID / MAC Address / Channel / Security / Signal Level
+  00  CCTXIPC  68:07:15:c4:fd:97  11  WPA_WPA2_PSK  56
+  01  CCTJ  40:0d:10:58:0f:29  6  WPA_WPA2_PSK  52
+  02  CCTJX  b0:19:21:d5:41:9c  2  WPA_WPA2_PSK  43
+  03  REMOTE77abrh  00:1d:c9:07:95:b5  3  WPA_WPA2_PSK  40
+  04  KindratsPortable  f2:c5:2b:cc:8e:2a  8  WPA_WPA2_PSK  29
+  05  EE-533WQK  a0:2d:db:28:f5:42  1  WPA_WPA2_PSK  28
+  06  \x00\x00\x00\x00\x00\x00\x00\x00\x00  7a:22:f3:88:62:33  11  WPA_WPA2_PSK  26
+  07  BT-7RC2GZ  4c:22:f3:88:62:37  11  WPA_WPA2_PSK  23
+  08  SKYLD1XH  d4:da:cd:cb:00:12  11  WPA_WPA2_PSK  22
+  09  SKYLD1XH  3c:89:94:4b:37:2a  6  WPA_WPA2_PSK  20
+  10  EE WiFi  0a:2d:db:28:f5:43  1  OPEN  27
+  11  EE WiFi  7a:22:f3:88:62:30  11  OPEN  26
+Wifi_build_scan_wpaConfig hotspotNum 12
+Detect_ap0_up start detect ======================
+Detect_ra0_up start detect ======================
+[Wifi_Load_Module] get wifi mode ==== 1
+[Wifi_Load_Module] ssid=CCTXIPC,key={WIFI___PASSORD}}
+[Wifi_Load_Module] wifi work mode ==== 1
+[Wifi_Load_Module] wifiDriver_mode === 1
+Detect_ra0_up start detect ======================
+wifi wlan0 down !
+Detect_ap0_up start detect ======================
+wifi ap0 up !
+Detect_ap0_up start detect ======================
+ntpconfig : ip:time.windows.com
+time: 23:59:00
+ interval:24
+enable:1
+Fun:FunInitSystem Line:473 [NetParmInit] is OKOKOL.
+
+Action_Record_Set_ManualEnable : stop
+======== we are going to init share buff ========
+Fun:FunInitSystem Line:479 [InitShBuf] is OKOKOL.
+NetAccess is 1
+
+====== we are going to init af params ======
+======== Detect echo thread start ========
+===== Thread_ShareFD thread create =====
+
+        ======== msgmanage thread start ========
+=========== NetReqProc thread start ===========
+
+ video video servport==90
+
+        ======== msgmanage thread start ========
+=========TH_RecvAN========
+alarmserver bind OKOK!!!
+
+====== we are going to init image ======
+
+====== infrared: change to daytime mode. ======
+
+
+=== awb_mode:0 ===
+======>>>hiapp set mode: 1
+== app head == symbol:SAFGL, msg_length 4
+== app recv from mw == symbol:SAFGL, result:-1
+killall: udhcpc: no process killed
+switch to wireless network
+== app head == symbol:SLDCL, msg_length 4
+== app recv from mw == symbol:SLDCL, result:-1
+[ImageManage_Set_DualMode_priv]---[1493] dualMode === 2 lightValue === 50 DayNightContrl === 1
+
+====== we are going to init encode ======
+DevicePixel 2073600, Resolution 10
+enc_darea.area_num 1, sizeof(ENC_DAREA_ST) 104
+== app head == symbol:SLINE, msg_length 104
+== app recv from mw == symbol:SLINE, result:-1
+Privacy value = 1
+Privacy arean = 0 enable = 0
+__connStatus old 0, to 1
+__ssid old , to CCTXIPC
+__key old {WIFI___PASSORD}}, to {WIFI___PASSORD}}
+killall: hostapd: no process killed
+killall: udhcpd: no process killed
+set netmask ifrname wlan0
+ifr.ifr_name=wlan0,netmask=ffffffff
+Wifi_Scan wifiDriver_mode ==== 1 gs_sta.s_fd === 0
+WiFi: 'SCAN' command fail!
+wlan_sm_sta_scan fail!
+Wifi_Scan hotspotNum 12
+Wifi_Connect wifiDriver_mode === 1
+Wifi_Connect hotspotNum 12
+killall: wpa_supplicant: no process killed
+Successfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+[wlan_wpa_open_connection]--[691] gs_sta.s_fd 10 local.sun_path /var/run/wpa_supplicant/wpa_17584_1
+[wlan_wpa_open_connection]--[700] gs_sta.s_fd 10 remote.sun_path /var/run/wpa_supplicant/wlan0
+
+connectime = 0,wifi_conn_check.connStatus = 0
+wifi_conn_check.ssid =
+[wifi_Check_Auth]--[4111] s32Ret === 0
+
+connectime = 1,wifi_conn_check.connStatus = 1
+wifi_conn_check.ssid = CCTXIPC
+killall: udhcpc: no process killed
+udhcpc (v1.22.1) started
+Sending discover...
+Sending select for 192.168.200.88...
+Lease of 192.168.200.88 obtained, lease time 43200
+deleting routers
+adding dns 1.1.1.1
+set netmask ifrname wlan0
+ifr.ifr_name=wlan0,netmask=ffffffff
+Privacy arean = 1 enable = 0
+Privacy arean = 2 enable = 0
+Privacy arean = 3 enable = 0
+Thread_status_check creat ok!
+MOTO_TYPE=0,TAIDE_TYPE=0
+TH_AlarmProcess_API creat ok!
++++++++++++++++ddns start++++++++++++++
+=================== Thread IR start! ===================
+Create thread <cameramode_task> successful !
+Start_Record_new !!
+new rec module start
+!!!!!! thread ntp_start_thread create sucessfully !!!!!!
+
+====== infrared: change to nighttime. ======
+wifi connected!!!
+arp get wifi cfg  ip 58c8a8c0, netmask ffffffff, route 0
+
+
+No ip found or DHCP fail , start udhcpc again !!!!!!!!!!!!!!
+
+umount: can't umount /mnt/flash/mmc: Device or resource busy
+udhcpc (v1.22.1) started
+umount: can't umount /dev/mmcblk0: Invalid argument
+umount: can't umount /mnt/flash/mmc: Device or resource busy
+mount: mounting /dev/mmcblk0p1 on /mnt/flash/mmc failed: Device or resource busy
+mount: mounting /dev/mmcblk0 on /mnt/flash/mmc failed: Device or resource busy
+Dbg:[start_tuya_module]---[1244] start_tuya_module ===================
+
+Dbg:hk_tuya_init info: yxkcpfgt9b4dpbin hhwsc6be1c9d8b676329 f9FHQWaCZNwkjvZl8sRsdYi1dRXwzAYm 1
+
+hk_tuya_ReadWrite_IntFlag pValue ==== 0
+Err:fopen read /tmp/wifiConfigError failed!
+
+Dbg:hk_tuya_stream_init ===================
+
+Dbg:APssid  ==== SmartLife_8b676329
+
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+__connStatus old 1, to 1
+__ssid old CCTXIPC, to CCTXIPC
+__key old {WIFI___PASSORD}}, to {WIFI___PASSORD}}
+
+
+No wifi's ip found or DHCP fail , start udhcpc again !!!!!!!!!!!!!!
+
+Sending discover...
+udhcpc (v1.22.1) started
+Received SIGTERM
+[hank_udhcpc_action]  dhcp wlan0 success
+[hank_udhcpc_action]  do udhcpc action over!
+Sending discover...
+Sending select for 192.168.200.88...
+Lease of 192.168.200.88 obtained, lease time 43200
+deleting routers
+adding dns 1.1.1.1
+__Ipv4Manage_Set_Wifi_Connect_API__4219__return__
+Dbg:hk_tuya_netMonitor_start ============================
+
+Dbg:hk_tuya_videoServer_start ============================
+
+Dbg:hk_tuya_qrcodeServer_start ============================
+
+Qrcode Thread start
+cur log num 1084
+log_notice, message 1085 is VIDEO LOST !! ENCODED STOP !!
+
+wifi ok, ntp sync now !DDNS_CloseClient-close client
+DDNS_CloseClient-exec_buff:
+md module start
+Dbg:IPC_APP_Init_SDK WIFI_INIT_MODE_E init_mode : 1
+
+Dbg:SDK Version:<TUYA IPC SDK V:4.8.8 >
+< TUYA IOT SDK V:4.1.1 BS:30.01_PT:2.2_LAN:3.3_CAD:1.0.1_CD:1.0.0 >
+IPC DEFS < ENABLE_ECHO_SHOW:0 ENABLE_CHROMECAST:0 ENABLE_CLOUD_STORAGE:1 >'
+< BUILD AT:2020_12_31_10_34_56 BY humin FOR linux_wifi_wired AT mips-gcc472-glibc216-64bit-r2.3.3 >
+
+
+Dbg:Init Value.storage_path /mnt/flash/productinfo/tuyaconfig/
+Dbg:Init Value.upgrade_file_path /tmp/update.bin
+Dbg:Init Value.sd_base_path /mnt/flash/mmc/video/
+Dbg:Init Value.product_key yxkcpfgt9b4dpbin
+Dbg:Init Value.uuid hhwsc6be1c9d8b676329
+Dbg:Init Value.auth_key f9FHQWaCZNwkjvZl8sRsdYi1dRXwzAYm
+Dbg:Init Value.p2p_id
+Dbg:Init Value.dev_sw_version 7.8.0
+Dbg:Init Value.max_p2p_user 2
+[IPC_APP_Set_Media_Info]--[62] s_media_info.video_codec E_CHANNEL_VIDEO_MAIN 4[IPC_APP_Set_Media_Info]--[83] s_media_info.video_codec E_CHANNEL_VIDEO_SUB 4Dbg:channel_enable:1 1 0
+Dbg:fps:20
+Dbg:gop:50
+Dbg:bitrate:3072 kbps
+Dbg:video_main_width:2304
+Dbg:video_main_height:1296
+Dbg:video_freq:90000
+Dbg:video_codec:4
+Dbg:audio_codec:105
+Dbg:audio_sample:8000
+Dbg:audio_databits:16
+Dbg:audio_channel:0
+Dbg:init ring buffer Channel:0 Enable:1
+cfq>> video_bitrate[0] = 3072 is out of range, change to 2048 now
+Dbg:video_bitrate 2048, video_fps 20
+Dbg:init ring buffer success. channel:0
+Dbg:init ring buffer Channel:1 Enable:1
+Dbg:video_bitrate 512, video_fps 20
+Dbg:init ring buffer success. channel:1
+Dbg:init ring buffer Channel:2 Enable:0
+Dbg:init ring buffer Channel:3 Enable:0
+Dbg:init ring buffer Channel:4 Enable:0
+Dbg:init ring buffer Channel:5 Enable:0
+Dbg:init ring buffer Channel:6 Enable:0
+Dbg:init ring buffer Channel:7 Enable:0
+Dbg:init ring buffer Channel:8 Enable:0
+Dbg:init ring buffer Channel:9 Enable:1
+Dbg:audio_sample 8000, audio_databits 16, audio_fps 25
+Dbg:init ring buffer success. channel:9
+Dbg:init ring buffer Channel:10 Enable:0
+Dbg:init ring buffer Channel:11 Enable:0
+Dbg:init ring buffer Channel:12 Enable:0
+Dbg:init ring buffer Channel:13 Enable:0
+Dbg:init ring buffer Channel:14 Enable:0
+Dbg:init ring buffer Channel:15 Enable:0
+[IPC_APP_Notify_LED_Sound_Status_CB]--[193] curr event:0
+[01-01 18:12:15-- TUYA Debug][tuya_iot_com_api.c:94] init fs. Path: /mnt/flash/productinfo/tuyaconfig/
+[01-01 18:12:15-- TUYA Info][kv_storge.c:43] Init Kvs With File:/mnt/flash/productinfo/tuyaconfig/
+[01-01 18:12:15-- TUYA Debug][simplekv.c:916] path:/mnt/flash/productinfo/tuyaconfig/
+[01-01 18:12:15-- TUYA Debug][simplekv.c:952] get encrypt_key[���US����ykR��]
+[01-01 18:12:15-- TUYA Debug][simplekv.c:983] both file exist
+[01-01 18:12:15-- TUYA Debug][simplekv.c:280] size in: 0 and final: 28700 And mag_rec_max: 512
+[01-01 18:12:15-- TUYA Debug][simplekv.c:295] create data hd success
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1026] read from normal file
+[01-01 18:12:15-- TUYA Debug][simplekv.c:736] curr db is V2. No need to upgrade
+[01-01 18:12:15-- TUYA Debug][simplekv.c:526] head check success
+[01-01 18:12:15-- TUYA Debug][simplekv.c:629] read and check head success
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1041] read from normal file success
+[01-01 18:12:15-- TUYA Debug][uni_thread.c:161] Init Thread Del Mgr
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1079] init from normal file success.
+[01-01 18:12:15-- TUYA Debug][sys_timer.c:63] system timer has been inited
+[01-01 18:12:15-- TUYA Debug][sys_timer.c:63] system timer has been inited
+[01-01 18:12:15-- TUYA Debug][sys_timer.c:63] system timer has been inited
+[01-01 18:12:15-- TUYA Debug][online_log_serv.c:340] read from uf. max:1 first:0 last:0
+[01-01 18:12:15-- TUYA Debug][online_log_serv.c:581] log serv init success
+[01-01 18:12:15-- TUYA Debug][ty_work_queue.c:22] init work queue. stack size:2560 pro:3 num:2
+[01-01 18:12:15-- TUYA Debug][ty_work_queue.c:27] ty work queue create success
+[01-01 18:12:15-- TUYA Debug][uni_thread.c:220] Thread:cmmod Exec Start. Set to Running Status
+[01-01 18:12:15-- TUYA Debug][uni_thread.c:220] Thread:wk_th-1 Exec Start. Set to Running Status
+[01-01 18:12:15-- TUYA Debug][uni_thread.c:220] Thread:sys_timer Exec Start. Set to Running Status
+[01-01 18:12:15-- TUYA Debug][sys_timer.c:34] system timer process run.
+
+[01-01 18:12:15-- TUYA Debug][uni_thread.c:220] Thread:wk_th-0 Exec Start. Set to Running Status
+Dbg:[IPC_APP_Init_SDK]--[189] tuya_ipc_init_sdk Success!
+
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:gw_bi isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1217] find key:0 gw_bi
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1246] key:gw_bi find value.Len:160
+[01-01 18:12:15-- TUYA Debug][tuya_ws_db.c:490] gw base read success
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:gw_bi isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1217] find key:0 gw_bi
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1246] key:gw_bi find value.Len:160
+[01-01 18:12:15-- TUYA Debug][tuya_ws_db.c:490] gw base read success
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2226] serial_no:(null)
+Set Country Code:CN
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:gw_wsm isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1217] find key:1 gw_wsm
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1246] key:gw_wsm find value.Len:160
+[01-01 18:12:15-- TUYA Debug][tuya_ws_db.c:610] gw_wsm read success
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2255] gw_cntl.gw_wsm.stat:2
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2258] gw_cntl.gw_wsm.nc_tp:6
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2259] gw_cntl.gw_wsm.md:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:gw_di isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1217] find key:2 gw_di
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1246] key:gw_di find value.Len:336
+[01-01 18:12:15-- TUYA Debug][tuya_ws_db.c:756] gw_di read success
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2292] gw_cntl.gw_if.abi:0 input:0
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2293] gw_cntl.gw_if.product_key:yxkcpfgt9b4dpbin, input:yxkcpfgt9b4dpbin
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:2294] gw_cntl.gw_if.tp:0, input:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:gw_ai isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1217] find key:5 gw_ai
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1246] key:gw_ai find value.Len:464
+[01-01 18:12:15-- TUYA Debug][tuya_ws_db.c:851] gw_ai read success
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:000002s95g isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1217] find key:4 000002s95g
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1246] key:000002s95g find value.Len:1744
+[01-01 18:12:15-- TUYA Debug][tuya_ws_db.c:1062] schema 000002s95g read success
+[01-01 18:12:15-- TUYA Debug][gw_intf.c:2521] dev bf75530609c0ff29b5fbxi bind schema [{"mode":"rw","property":{"type":"bool"},"id":103,"type":"obj"},{"mode":"rw","property":{"type":"bool"},"id":104,"type":"obj"},{"mode":"rw","property":{"type":"bool"},"id":105,"type":"obj"},{"mode":"rw","property":{"range":["0","1","2"],"type":"enum"},"id":106,"type":"obj"},{"mode":"ro","property":{"type":"string","maxlen":255},"id":109,"type":"obj"},{"mode":"ro","property":{"min":1,"max":5,"scale":1,"step":1,"type":"value"},"id":110,"type":"obj"},{"mode":"rw","property":{"type":"bool"},"id":111,"type":"obj"},{"mode":"rw","property":{"type":"string","maxlen":255},"id":114,"type":"obj"},{"mode":"ro","id":115,"type":"raw"},{"mode":"rw","property":{"type":"bool"},"id":116,"type":"obj"},{"mode":"ro","property":{"min":-20000,"max":20000,"scale":1,"step":1,"type":"value"},"id":117,"type":"obj"},{"mode":"rw","property":{"range":["1","2","3","4","5","6","7","0","8","9"],"type":"enum"},"id":119,"type":"obj"},{"mode":"rw","property"
+[01-01 18:12:15-- TUYA Debug][gw_intf.c:2850] Bind Dev Attach Success bf75530609c0ff29b5fbxi 1
+[01-01 18:12:15-- TUYA Debug][gw_intf.c:2452] enter success_proc
+Exec Cmd:ifconfig wlan0 up
+[01-01 18:12:15-- TUYA Debug][tuya_iot_wifi_api.c:365] register wifi network monitor. interval:5
+[01-01 18:12:15-- TUYA Debug][app_agent.c:333] TUYA Mode, start TUYA thread to listen Lan
+[01-01 18:12:15-- TUYA Debug][app_agent.c:363] cmmod register finish 1
+Dbg:[IPC_APP_Init_SDK]--[198] tuya_ipc_start_sdk Success!
+
+Dbg:[IPC_APP_Init_SDK]--[201] tuyaRegisterSta ==== 2!
+
+[01-01 18:12:15-- TUYA Debug][uni_thread.c:220] Thread:lpc_task Exec Start. Set to Running Status
+[01-01 18:12:15-- TUYA Debug][app_agent.c:890] begint to execute __lpc_task
+[01-01 18:12:15-- TUYA Debug][app_agent.c:917] Setup TCP Server On Port:6668
+hwl_wf_wk_mode_set current mode 2
+WIFI Set Mode 2
+hwl_wf_station_connect ssid === CCTXIPC passwd === {WIFI___PASSORD}} tuyaRegisterSta === 2
+hwl_wf_station_connect tuyaRegisterSta === 2
+hwl_wf_station_connect IPC Dev is banded!
+[01-01 18:12:15-- TUYA Warn][app_agent.c:294] lan is inited before
+[01-01 18:12:15-- TUYA Debug][gw_intf.c:628] gw_wsm stat:2
+Already in status 0
+[01-01 18:12:15-- TUYA Notice][gw_intf.c:466] stop smt cfg mthd:0
+Dbg:__IPC_APP_Get_Net_Status_cb Net status change to:3
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1177] read key:timer_arr isFuzzy:0 skipCnt:0
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1213] no key find
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1260] __read_kv_raw fail. -3
+[01-01 18:12:15-- TUYA Debug][simplekv.c:1294] __read_kv_with_decode fail. -3
+[01-01 18:12:15-- TUYA Debug][timer_task.c:118] no timer task in local db
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:481] MQTT Protocol URL:m2.tuyaeu.com Port:8883
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:502] TLS in not disable. disable mqtt time check
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:401] TLS Mode is NOT TLS_DISABLE:4 .set username = gwid
+[01-01 18:12:15-- TUYA Debug][mqtt_client.c:241] subcribe_topic:smart/device/in/bf75530609c0ff29b5fbxi
+[01-01 18:12:15-- TUYA Debug][mqtt_client.c:242] client_id:bf75530609c0ff29b5fbxi
+[01-01 18:12:15-- TUYA Debug][mqtt_client.c:243] user_name:bf75530609c0ff29b5fbxi
+[01-01 18:12:15-- TUYA Debug][mqtt_client.c:244] passwd:356dd820b3f513fb
+[01-01 18:12:15-- TUYA Debug][mqtt_client.c:1768] add new topic /av/d/bf75530609c0ff29b5fbxi
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:579] mqtt send topic:smart/device/out/bf75530609c0ff29b5fbxi
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:301 mqc_handler_cnt:1
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:300 mqc_handler_cnt:2
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:307 mqc_handler_cnt:3
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:304 mqc_handler_cnt:4
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:308 mqc_handler_cnt:5
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:302 mqc_handler_cnt:6
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:312 mqc_handler_cnt:7
+[01-01 18:12:15-- TUYA Debug][tuya_ipc_mqt_proccess.c:665] iot_register_extra_mqt_cb done
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:5 mqc_handler_cnt:8
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:11 mqc_handler_cnt:9
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:13 mqc_handler_cnt:10
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:15 mqc_handler_cnt:11
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:22 mqc_handler_cnt:12
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:31 mqc_handler_cnt:13
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:41 mqc_handler_cnt:14
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:55 mqc_handler_cnt:15
+[01-01 18:12:15-- TUYA Debug][mqc_app.c:120] mq_pro:51 mqc_handler_cnt:16
+[01-01 00:00:00-- TUYA Debug][uni_thread.c:220] Thread:mq_cntl_ta Exec Start. Set to Running Status
+[01-01 00:00:00-- TUYA Debug][mqtt_client.c:1120] __mq_ctrl_task start
+[01-01 00:00:00-- TUYA Debug][simplekv.c:1177] read key:p2p_pwd isFuzzy:0 skipCnt:0
+[01-01 00:00:00-- TUYA Debug][simplekv.c:1217] find key:3 p2p_pwd
+[01-01 00:00:00-- TUYA Debug][simplekv.c:1246] key:p2p_pwd find value.Len:16
+[01-01 00:00:12-- TUYA Debug][tuya_ipc_p2p_common.c:458] get p2p passwd = ad69679c
+x_max_steps=3250,y_max_steps=1150,x_cur_step=1625,y_cur_step=575
+ntp_check_time ok
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+[01-01 00:00:12-- TUYA Debug][tuya_iot_wifi_api.c:347] wifi netstat changed to:6  -->>
+Dbg:__IPC_APP_Get_Net_Status_cb Net status change to:6
+[01-01 00:00:12-- TUYA Debug][tuya_iot_wifi_api.c:350] wifi netstat changed to:6  <<--
+[01-01 00:00:12-- TUYA Debug][app_agent.c:702] Create UDP Socket To Broadcast
+store dns info to position 7 for m2.tuyaeu.com 0x341c729d
+[01-01 00:00:12-- TUYA Debug][mqtt_client.c:1145] select mqtt host:m2.tuyaeu.com
+[01-01 00:00:12-- TUYA Notice][mqtt_client.c:1158] mqtt get serve ip success
+[01-01 00:00:12-- TUYA Debug][mqtt_client.c:822] serverIP 874279581 port:8883
+[01-01 00:00:12-- TUYA Debug][mqtt_client.c:834] mqtt over TLS is enabled. Host:m2.tuyaeu.com Port:8883
+[01-01 00:00:12-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-01 00:00:12-- TUYA Debug][tuya_tls.c:966] sock(16) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:21(setup)400(shake)0(verify)
+[01-01 00:00:12-- TUYA Debug][mqtt_client.c:1186] mqtt socket create success. begin to connect
+[01-01 00:00:12-- TUYA Debug][mqc_app.c:401] TLS Mode is NOT TLS_DISABLE:4 .set username = gwid
+[01-01 00:00:12-- TUYA Notice][mqtt_client.c:1200] mqtt socket connect success. begin to subscribe
+
+[01-01 00:00:12-- TUYA Debug][mqtt_client.c:915] mqtt subscribe success
+[01-01 00:00:12-- TUYA Debug][mqc_app.c:794] mqtt connected success
+Dbg:__IPC_APP_Get_Net_Status_cb Net status change to:11
+Dbg:__IPC_APP_Get_Net_Status_cb STAT_MQTT_ONLINE start speak Config Over!
+[01-01 00:00:13-- TUYA Debug][simplekv.c:1177] read key:em_sys_env isFuzzy:0 skipCnt:0
+[01-01 00:00:13-- TUYA Debug][simplekv.c:1217] find key:6 em_sys_env
+[01-01 00:00:13-- TUYA Debug][simplekv.c:1246] key:em_sys_env find value.Len:64
+[01-01 00:00:13-- TUYA Debug][online_log_serv.c:161] load env success mips-gcc472-glibc216-64bit-r2.3.3
+[01-01 00:00:13-- TUYA Debug][online_log_serv.c:164] env mips-gcc472-glibc216-64bit-r2.3.3 same. need not to update
+[01-01 00:00:14-- TUYA Debug][smart_frame.c:901] Start To Sync Dev:bf75530609c0ff29b5fbxi
+[01-01 00:00:14-- TUYA Debug][smart_frame.c:1803] Pack local dp values reset_flow_ctl:1
+[01-01 00:00:14-- TUYA Debug][smart_frame.c:1877] Nothing To Pack
+[01-01 00:00:14-- TUYA Debug][smart_frame.c:929] Sync Finish
+[01-01 00:00:15-- TUYA Debug][iot_httpc.c:909] Post Data: {"devId":"bf75530609c0ff29b5fbxi","lastFetchTime":"0","t":15}
+[01-01 00:00:15-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=tuya.device.timer.count&devId=bf75530609c0ff29b5fbxi&et=1&t=15&v=4.0&sign=f7287dc1bead83c06df926c0d839a195
+store dns info to position 6 for a2.tuyaeu.com 0x037b46df
+[01-01 00:00:15-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-01 00:00:15-- TUYA Debug][tuya_tls.c:966] sock(22) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:0(setup)318(shake)0(verify)
+[01-01 00:00:15-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 55(tcp)318(tls)
+[01-01 00:00:15-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:207
+[01-01 00:00:15-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-01 00:00:15-- TUYA Debug][iot_httpc.c:784] call time-set 1768846347
+[01-19 18:12:27-- TUYA Debug][timer_task.c:262] timer query time equal. skip:0
+[01-19 18:12:27-- TUYA Debug][iot_httpc.c:909] Post Data: {"subId":null,"t":1768846347}
+[01-19 18:12:27-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=tuya.device.upgrade.silent.get&devId=bf75530609c0ff29b5fbxi&et=1&t=1768846347&v=4.2&sign=328ada06cb59faf232e5e52a9ab64ffe
+[01-19 18:12:27-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-19 18:12:27-- TUYA Debug][tuya_tls.c:966] sock(22) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:0(setup)317(shake)0(verify)
+[01-19 18:12:27-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 3(tcp)317(tls)
+[01-19 18:12:27-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:99
+[01-19 18:12:27-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-19 18:12:27-- TUYA Debug][iot_httpc.c:784] call time-set 1768846347
+[01-19 18:12:27-- TUYA Debug][gw_intf.c:3897] silent get gw firmware,no firmware available
+[01-19 18:12:27-- TUYA Debug][gw_intf.c:3976] silent get gw firmware finish
+[01-19 18:12:28-- TUYA Debug][tuya_iot_wifi_api.c:347] wifi netstat changed to:7  -->>
+Dbg:__IPC_APP_Get_Net_Status_cb Net status change to:7
+[IPC_APP_Notify_LED_Sound_Status_CB]--[193] curr event:4
+Dbg:mqtt is online
+
+[01-19 18:12:28-- TUYA Debug][tuya_iot_wifi_api.c:350] wifi netstat changed to:7  <<--
+[01-19 18:12:28-- TUYA Debug][online_log_serv.c:433] has no net_cfg_log file
+[01-19 18:12:28-- TUYA Debug][online_log_serv.c:503] 0  1
+Err:tuya UserSet 0 buffer and send loss video data
+
+Err:tuya UserSet 1 buffer and send loss video data
+
+[01-19 18:12:28-- TUYA Debug][online_log_serv.c:251] mqtt log topic init log/realtime/bf75530609c0ff29b5fbxi
+[01-19 18:12:28-- TUYA Debug][mqc_app.c:1535] custom async cb op_ret: 0
+519 upolad net_cfg log: notify | 30.01 | 01-19 17:50:04 | erc:0 | [200:1 | 202:357 | 3:1768845004 | 212:6819 | 211:get_cfg_err | 210:content_err | 212:6819 | 211:get_cfg_err | 210:content_err | 1:upload_err]  0  1
+[01-19 18:12:28-- TUYA Debug][online_log_serv.c:352] ****************write ufstat. {"max":0,"last":0,"first":1}
+[01-19 18:12:28-- TUYA Debug][online_log_serv.c:534] all log seq uploaded
+[01-19 18:12:28-- TUYA Debug][online_log_serv.c:352] ****************write ufstat. {"max":0,"last":0,"first":0}
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:909] Post Data: {"data":"do't support get reset reason","t":1768846349}
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=atop.online.debug.log&devId=bf75530609c0ff29b5fbxi&et=1&t=1768846349&sign=6e1eecdca361911499b00057aa1a4ca8
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_api.c:352] ipc get service time 1768846349 0
+Dbg:Get Server Time Success: 1768846349 0 dls 0
+Dbg:[IPC_APP_Sync_Utc_Time]--[305]: 2026-1-19 18:12:29
+
+
+SystemManage_Set_SystemTime_API: 2026-1-19 18:12:29
+timezone = 13
+systime = 1768846349
+In SystemManage_Set_SystemTime_API() settimeofday ret = 0
+time_different size 33, timeZone 0
+Dbg:TimeZoneValue2TimeDifferent hktimeZoneValue === 13
+
+Dbg:Init P2P With Max Users:2
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_webrtc.c:680] begin___
+
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_webrtc.c:687] --audio-:8000,format:105
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_webrtc.c:688] end___ audiocbk_hdl(0x47fc5c)
+
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4640] gw actived
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_streamer.c:1429] tstream init start
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_packager.c:52] get packager instance
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_packager.c:62] get packager instance done
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1177] read key:cloud_enc_key isFuzzy:0 skipCnt:0
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1217] find key:7 cloud_enc_key
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1246] key:cloud_enc_key find value.Len:32
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_encrypt.c:288] use key :1c5838f65f044054
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_streamer.c:1484] tstream init done
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_streamer.c:1385] CLOUD GW skill info:\"videos\":[{\"streamType\":2,\"codecType\":4,\"sampleRate\":90000,\"profileId\":\"\",\"width\":2304,\"height\":1296},{\"streamType\":4,\"codecType\":2,\"sampleRate\":90000,\"width\":640,\"height\":480}],\"audios\":[{\"codecType\":105,\"sampleRate\":8000,\"dataBit\":16,\"channels\":1}]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4663] p2p max_client_num[2]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4664] p2p init media info:
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4307] video codec[20] fps[20] gop[50]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4308] height[1296] width[2304] bitrate[2048]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4307] video codec[18] fps[20] gop[50]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4308] height[480] width[640] bitrate[512]
+[01-19 18:12:29-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-19 18:12:29-- TUYA Debug][tuya_tls.c:966] sock(22) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:1(setup)316(shake)1(verify)
+[01-19 18:12:29-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 2(tcp)319(tls)
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[20] fps[20] gop[50]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[1296] width[2304] bitrate[2048]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[18] fps[20] gop[50]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[480] width[640] bitrate[512]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[0] fps[0] gop[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[0] width[0] bitrate[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[0] fps[0] gop[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[0] width[0] bitrate[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[0] fps[0] gop[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[0] width[0] bitrate[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[0] fps[0] gop[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[0] width[0] bitrate[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[0] fps[0] gop[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[0] width[0] bitrate[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4318] video codec[0] fps[0] gop[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4319] height[0] width[0] bitrate[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4321] audio codec[133] sample[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4322] databits[1] channel[0]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4685] need speaker audio codec[133] sample[0] databits[1] channel[0] defLiveMode[0]
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1177] read key:p2p_pwd isFuzzy:0 skipCnt:0
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1217] find key:3 p2p_pwd
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1246] key:p2p_pwd find value.Len:16
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p_common.c:185] get p2p passwd = ad69679c
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p_common.c:308] check p2p auth update or not
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1177] read key:p2p_auth_info isFuzzy:0 skipCnt:0
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1217] find key:8 p2p_auth_info
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1246] key:p2p_auth_info find value.Len:32
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1177] read key:p2p_type isFuzzy:0 skipCnt:0
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1217] find key:9 p2p_type
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1246] key:p2p_type find value.Len:16
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p_common.c:379] no need update p2p_auth_info from service
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1177] read key:p2p_auth_info isFuzzy:0 skipCnt:0
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_streamer.c:1221] ThreadStreaming thread start
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_streamer.c:1232] local key <Av;qHvvQw?rJ-Zr
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1217] find key:8 p2p_auth_info
+[01-19 18:12:29-- TUYA Debug][simplekv.c:1246] key:p2p_auth_info find value.Len:32
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p_common.c:41] load str:{"p2pId":"","type":4}
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4740] p2p did[] apiLicense[] initString[]
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4743] support p2p type = 4
+P2P API Version: 244.3.3.1
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4532] no encrypt
+tuya p2p rtc sdk version: 0xf4030301, Nov 20 2020 16:42:53
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:119
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:784] call time-set 1768846349
+[01-19 18:12:29-- TUYA Debug][gw_intf.c:4137] http_put_rst_log finish
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:909] Post Data: {"t":1768846349}
+[01-19 18:12:29-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=tuya.device.dynamic.config.get&devId=bf75530609c0ff29b5fbxi&et=1&t=1768846349&v=1.0&sign=d7caf9dbda8c0ed0b26c96f72235a690
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4575] _mqtt_p2p_listen_sessions create
+[01-19 18:12:29-- TUYA Err][tuya_ipc_p2p.c:4764] p2p v3 init ok
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4797] speaker task create success
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4821] __p2p_session_detech create
+fopen /mnt/flash/productinfo/tuyaconfig/sleepmode.cfg failed!
+curr sleep_mode:0
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:4189] Begin to session detech
+[01-19 18:12:29-- TUYA Debug][tuya_ipc_p2p.c:3751] Begin to Listen mqtt p2p client connects In Thread
+mqtt p2p LISTEN session........
+8483052 INFO  src/tuya_rtc.c:5526: try listen
+[01-19 18:12:29-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"105":false}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<105> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-19 18:12:30-- TUYA Debug][tuya_tls.c:966] sock(22) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:0(setup)443(shake)0(verify)
+[01-19 18:12:30-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 1(tcp)445(tls)
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:808] first serial number: 7627
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7627 Q:1
+curr light_on_off:0
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:101 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+curr flip_on_off:0
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"103":false}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<103> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7628 Q:1
+curr watermark_on_off:1
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"104":true}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<104> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7629 Q:1
+curr watermark_on_off:0
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:107 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+IR_Get_Requeset cfg->dual_enable === 2 cfg->luminval === 50
+curr c_ircfg.ir_mode:1
+curr tuya_night_mode:0
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:108 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+curr alarm_on_off:1
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"134":true}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<134> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:183
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:784] call time-set 1768846350
+[01-19 18:12:30-- TUYA Debug][gw_intf.c:4411] has no stdTimeZone
+[01-19 18:12:30-- TUYA Debug][gw_intf.c:4428] has no dstIntervals
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1177] read key:gw_ai isFuzzy:0 skipCnt:0
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1217] find key:5 gw_ai
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1246] key:gw_ai find value.Len:464
+[01-19 18:12:30-- TUYA Debug][tuya_ws_db.c:798] gw_ai write success
+[01-19 18:12:30-- TUYA Debug][gw_intf.c:4451] has no ackId
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7630 Q:1
+curr alarm_sensitivity:1
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"106":"1"}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<106> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:1535] custom async cb op_ret: 0
+[01-19 18:12:30-- TUYA Debug][online_log_serv.c:407] upload log_seq success.p2p_mod | 30.01 | 01-19 18:12:29 | erc:0 | [2:4 | 4 | 7]
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7631 Q:1
+curr alarm_on_off:0
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:168 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+[IPC_APP_get_alarm_zone_draw][597] alarm zone[]
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:169 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+sd_info.SDStatusFlg === 7 SDMountFlg === 0
+curr sd_status:2
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"110":2}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<110> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7632 Q:1
+curr sd total:0 used:0 empty:0
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"109":"0|0|0"}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<109> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7633 Q:1
+hk_tuya_ReadWrite_IntFlag pValue ==== 0
+get curr sd_record_on_off:0
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"150":false}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<150> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7634 Q:1
+get_sd_record_mode sd_info.SDStartFlg aMotionEnable: 0 1
+get_sd_record_mode humanEnable: 1
+get curr sd_record_mode:0
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"151":"1"}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<151> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7635 Q:1
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"117":0}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<117> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7636 Q:1
+curr blub_on_off:2
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:138 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+curr blub_value:50
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:158 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+curr anti_flicker:1
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:188 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+get filter_enable 1
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"170":true}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<170> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7637 Q:1
+curr s_nightvision_mode:0
+[01-19 18:12:30-- TUYA Debug][tuya_iot_com_api.c:633] dp compo:{"124":"auto"}
+[01-19 18:12:30-- TUYA Debug][smart_frame.c:1536] dp<124> check. need_update:1 pv_stat:0 trig_t:0 filter_type:0 force_send:1
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:909] Post Data: {"type":"tuya_p2p_log","data":"{\"tuya_p2p_sdk_version\":\"tuya_p2p_sdk_v3.3.1, Nov 20 2020 16:42:53\"}","t":1768846350}
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=tuya.device.log.report&devId=bf75530609c0ff29b5fbxi&et=1&t=1768846350&v=1.0&sign=3db49f8dd69d74e51e1a9582494b91e7
+[01-19 18:12:30-- TUYA Debug][mqc_app.c:970] Send MQTT Msg.P:4 N:7638 Q:1
+curr s_siren_sound:0
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:125 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+curr s_siren_duration:10
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:194 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+curr volume:70
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:511] devid:(null) dparr[0]:195 not find
+[01-19 18:12:30-- TUYA Err][tuya_iot_com_api.c:660] dp composition fail.ret:-944
+[01-19 18:12:30-- TUYA Debug][tuya_ipc_cloud_storage.c:1699] init cloud storage begin
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1177] read key:md5_encrypt_key isFuzzy:0 skipCnt:0
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1213] no key find
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1260] __read_kv_raw fail. -3
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1294] __read_kv_with_decode fail. -3
+[01-19 18:12:30-- TUYA Err][tuya_ipc_cloud_storage.c:297] iot_wd_common_read fails md5_encrypt_key -901
+[01-19 18:12:30-- TUYA Err][tuya_ipc_cloud_storage.c:382] read key_key file failed.
+
+[01-19 18:12:30-- TUYA Debug][tuya_ipc_cloud_storage.c:1766] __check_md5_encrypt_key fail, need update from server
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1177] read key:storage_restriction isFuzzy:0 skipCnt:0
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1217] find key:10 storage_restriction
+[01-19 18:12:30-- TUYA Debug][simplekv.c:1246] key:storage_restriction find value.Len:32
+[01-19 18:12:30-- TUYA Debug][tuya_ipc_cloud_storage.c:800] case 1 read slice duration from db 10
+[01-19 18:12:30-- TUYA Debug][tuya_ipc_cloud_storage.c:865] cloud storage seize 3059584 bytes memory for media data, each slice 10 seconds
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:909] Post Data: {"type":"MediaStor","t":1768846350}
+[01-19 18:12:30-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=tuya.device.storage.config.get&devId=bf75530609c0ff29b5fbxi&et=1&t=1768846350&v=3.0&sign=8cf7cbfc19a80c7d8f71e729bfcc2500
+[01-19 18:12:30-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-19 18:12:30-- TUYA Debug][tuya_tls.c:966] sock(32) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:0(setup)485(shake)0(verify)
+[01-19 18:12:30-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 2(tcp)485(tls)
+[01-19 18:12:31-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-19 18:12:31-- TUYA Debug][tuya_tls.c:966] sock(22) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:0(setup)476(shake)0(verify)
+[01-19 18:12:31-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 3(tcp)476(tls)
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:119
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:784] call time-set 1768846351
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:183
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:784] call time-set 1768846351
+[01-19 18:12:31-- TUYA Err][cloud_operation.c:731] errorCode:CAMERA_STORAGE_ORDER_NOT_EXISTED
+[01-19 18:12:31-- TUYA Debug][tuya_ipc_cloud_storage.c:467] order expire or remote server error
+[01-19 18:12:31-- TUYA Debug][tuya_ipc_cloud_storage.c:1836] init cloud storage success
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:909] Post Data: {"skill":"{\"sdk_version\":\"4.8.8\",\"cloudGW\":1,\"cloudStorage\":1,\"webrtc\":51,\"p2p\":3,\"video_num\":2,\"videos\":[{\"streamType\":2,\"codecType\":4,\"sampleRate\":90000,\"profileId\":\"\",\"width\":2304,\"height\":1296},{\"streamType\":4,\"codecType\":2,\"sampleRate\":90000,\"width\":640,\"height\":480}],\"audios\":[{\"codecType\":105,\"sampleRate\":8000,\"dataBit\":16,\"channels\":1}]}","t":1768846351}
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:920] Post URL: https://a2.tuyaeu.com/d.json?a=tuya.device.skill.update&devId=bf75530609c0ff29b5fbxi&et=1&t=1768846351&v=1.0&sign=248dc43e1bd6a295a888d614b63f051a
+[01-19 18:12:31-- TUYA Debug][mqc_app.c:1535] custom async cb op_ret: 0
+[01-19 18:12:31-- TUYA Debug][online_log_serv.c:407] upload log_seq success.cloud_storage | 30.01 | 01-19 18:12:31 | erc:0 | [0:-2 | 2:3059584 | 70:01-19 18:12:30 | 71:-2002]
+[01-19 18:12:31-- TUYA Debug][mqc_app.c:1535] custom async cb op_ret: 0
+[01-19 18:12:31-- TUYA Debug][online_log_serv.c:407] upload log_seq success.cloud_storage | 30.01 | 01-19 18:12:31 | erc:0 | [4:2 | 5]
+[01-19 18:12:31-- TUYA Err][tuya_tls.c:959] mbedtls_ssl_get_verify_result flag 8
+[01-19 18:12:31-- TUYA Debug][tuya_tls.c:966] sock(22) Suit:TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256 Cost:0(setup)317(shake)0(verify)
+[01-19 18:12:31-- TUYA Debug][httpc.c:757] Connect: a2.tuyaeu.com Port: 443 cost 1(tcp)317(tls)
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:549] Malloc Buffer Size:99
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:676] Decode Rev:(null)
+[01-19 18:12:31-- TUYA Debug][iot_httpc.c:784] call time-set 1768846351
+[01-19 18:12:31-- TUYA Debug][tuya_ipc_skill.c:135] upload data: {\"sdk_version\":\"4.8.8\",\"cloudGW\":1,\"cloudStorage\":1,\"webrtc\":51,\"p2p\":3,\"video_num\":2,\"videos\":[{\"streamType\":2,\"codecType\":4,\"sampleRate\":90000,\"profileId\":\"\",\"width\":2304,\"height\":1296},{\"streamType\":4,\"codecType\":2,\"sampleRate\":90000,\"width\":640,\"height\":480}],\"audios\":[{\"codecType\":105,\"sampleRate\":8000,\"dataBit\":16,\"channels\":1}]}
+tuya_thread_md_proc start ===================
+[01-19 18:12:31-- TUYA Debug][gw_intf.c:4555] dev delete -->>
+[01-19 18:12:31-- TUYA Debug][gw_intf.c:4600] dev delete <<--
+gbj_trace_start!
+cfq 743>>
+max_x 3220, max_y 1068
+trace module start
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+[01-19 18:12:40-- TUYA Debug][tuya_ipc_p2p.c:4279] session detect run
+[01-19 18:12:50-- TUYA Debug][tuya_ipc_p2p.c:4279] session detect run
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+cur log num 1085
+log_notice, message 1086 is system start!!
+
+[01-19 18:13:00-- TUYA Debug][tuya_ipc_p2p.c:4279] session detect run
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+[01-19 18:13:10-- TUYA Debug][tuya_ipc_p2p.c:4279] session detect run
+[01-19 18:13:20-- TUYA Debug][tuya_ipc_p2p.c:4279] session detect run
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+[01-19 18:13:24-- TUYA Debug][mqtt_client.c:149] mqtt_ping -->>
+[01-19 18:13:24-- TUYA Debug][mqtt_client.c:180] mqtt_ping <<--
+[01-19 18:13:24-- TUYA Debug][mqtt_client.c:1043] ping respond. update fail_cnt:0 time 1768846404
+[01-19 18:13:30-- TUYA Debug][tuya_ipc_p2p.c:4279] session detect run
+_WIFI_GetLinkQuality() = 0, s32Quality = 88
+^CFun:DebugBacktrace Line:261 stop app on signal SIGINT(2)

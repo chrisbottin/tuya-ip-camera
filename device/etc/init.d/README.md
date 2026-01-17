@@ -1,0 +1,1 @@
+vi -R /etc/init.d/S02moutfs

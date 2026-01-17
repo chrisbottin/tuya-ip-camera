@@ -1,0 +1,1514 @@
+# Notes: Boot logs from Camera Device in configuration mode (first time or after reset)
+
+U-Boot SPL 2013.07 (Dec 23 2020 - 12:31:13)
+Timer init
+CLK stop
+PLL init
+pll_init:366
+pll_cfg.pdiv = 10, pll_cfg.h2div = 5, pll_cfg.h0div = 5, pll_cfg.cdiv = 1, pll_cfg.l2div = 2
+nf=84 nr = 1 od0 = 1 od1 = 2
+cppcr is 05405100
+CPM_CPAPCR 0540510d
+nf=84 nr = 1 od0 = 1 od1 = 2
+cppcr is 05405100
+CPM_CPMPCR 07d0590d
+nf=100 nr = 1 od0 = 1 od1 = 2
+cppcr is 06405100
+CPM_CPVPCR 0640510d
+cppcr 0x9a773310
+apll_freq 1008000000
+mpll_freq 1000000000
+vpll_freq = 1200000000
+ddr sel mpll, cpu sel apll
+ddrfreq 500000000
+cclk  1008000000
+l2clk 504000000
+h0clk 200000000
+h2clk 200000000
+pclk  100000000
+CLK init
+SDRAM init
+sdram init start
+ddr_inno_phy_init ..!
+phy reg = 0x00000007, CL = 0x00000007
+ddr_inno_phy_init ..! 11:  00000004
+ddr_inno_phy_init ..! 22:  00000006
+ddr_inno_phy_init ..! 33:  00000006
+REG_DDR_LMR: 00000210
+REG_DDR_LMR: 00000310
+REG_DDR_LMR: 00000110
+REG_DDR_LMR, MR0: 00f73011
+T31_0x5: 00000007
+T31_0x15: 0000000c
+T31_0x4: 00000000
+T31_0x14: 00000002
+INNO_TRAINING_CTRL 1: 00000000
+INNO_TRAINING_CTRL 2: 000000a1
+T31_cc: 00000003
+INNO_TRAINING_CTRL 3: 000000a0
+T31_118: 0000003c
+T31_158: 0000003c
+T31_190: 00000020
+T31_194: 0000001f
+jz-04 :  0x00000051
+jz-08 :  0x000000a0
+jz-28 :  0x00000024
+DDR PHY init OK
+INNO_DQ_WIDTH   :00000003
+INNO_PLL_FBDIV  :00000014
+INNO_PLL_PDIV   :00000005
+INNO_MEM_CFG    :00000051
+INNO_PLL_CTRL   :00000018
+INNO_CHANNEL_EN :0000000d
+INNO_CWL        :00000006
+INNO_CL         :00000007
+DDR Controller init
+DDRC_STATUS         0x80000001
+DDRC_CFG            0x0a288a40
+DDRC_CTRL           0x0000011c
+DDRC_LMR            0x00400008
+DDRC_DLP            0x00000000
+DDRC_TIMING1        0x040e0806
+DDRC_TIMING2        0x02170707
+DDRC_TIMING3        0x2007051e
+DDRC_TIMING4        0x1a240031
+DDRC_TIMING5        0xff060405
+DDRC_TIMING6        0x32170505
+DDRC_REFCNT         0x00f25a01
+DDRC_MMAP0          0x000020fc
+DDRC_MMAP1          0x00002400
+DDRC_REMAP1         0x03020d0c
+DDRC_REMAP2         0x07060504
+DDRC_REMAP3         0x0b0a0908
+DDRC_REMAP4         0x0f0e0100
+DDRC_REMAP5         0x13121110
+DDRC_AUTOSR_EN      0x00000000
+sdram init finished
+SDRAM init ok
+board_init_r
+image entry point: 0x80100000
+
+
+U-Boot 2013.07 (Dec 23 2020 - 12:31:13)
+
+Board: ISVP (Ingenic XBurst T31 SoC)
+DRAM:  64 MiB
+Top of RAM usable for U-Boot at: 84000000
+Reserving 442k for U-Boot at: 83f90000
+Reserving 32784k for malloc() at: 81f8c000
+Reserving 32 Bytes for Board Info at: 81f8bfe0
+Reserving 124 Bytes for Global Data at: 81f8bf64
+Reserving 128k for boot params() at: 81f6bf64
+Stack Pointer at: 81f6bf48
+Now running in RAM - U-Boot at: 83f90000
+MMC:   msc: 0
+the manufacturer 20
+SF: Detected XM25QH64A
+
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   ====>PHY not found!Jz4775-9161
+Hit any key to stop autoboot:  1  0 
+the manufacturer 20
+SF: Detected XM25QH64A
+
+--->probe spend 4 ms
+SF: 1507328 bytes @ 0x40000 Read: OK
+--->read spend 486 ms
+## Booting kernel from Legacy Image at 80600000 ...
+   Image Name:   Linux-3.10.14__isvp_swan_1.0__
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1461216 Bytes = 1.4 MiB
+   Load Address: 80010000
+   Entry Point:  8038c9e0
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (root@tomye-virtual-machine) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #7 PREEMPT Tue Dec 22 21:28:36 CST 2020
+[    0.000000] CPU0 RESET ERROR PC:E05A7E1C
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:1008MHz L2CLK:504Mhz H0CLK:250MHz H2CLK:250Mhz PCLK:125Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 00425000 @ 00010000 (usable)
+[    0.000000]  memory: 0003b000 @ 00435000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 02800000 @ 00000000 (usable)
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x027fffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x027fffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 10160
+[    0.000000] Kernel command line: console=ttyS1,115200n8 mem=40M@0x0 rmem=24M@0x2800000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock2 rw mtdparts=jz_sfc:256k(boot),1472k(kernel),1024k(root),384K(config),-(appfs)
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Memory: 35416k/40960k available (3604k kernel code, 5544k reserved, 638k data, 236k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000019] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[    0.039997] pid_max: default: 32768 minimum: 301
+[    0.040246] Mount-cache hash table entries: 512
+[    0.040766] Initializing cgroup subsys debug
+[    0.040786] Initializing cgroup subsys freezer
+[    0.042865] regulator-dummy: no parameters
+[    0.043020] NET: Registered protocol family 16
+[    0.046709] bio: create slab <bio-0> at 0
+[    0.048682] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.048954] usbcore: registered new interface driver usbfs
+[    0.049001] usbcore: registered new interface driver hub
+[    0.049166] usbcore: registered new device driver usb
+[    0.049341] i2c-gpio i2c-gpio.1: using pins 57 (SDA) and 58 (SCL)
+[    0.049428]  (null): set:311  hold:312 dev=125000000 h=625 l=625
+[    0.051332] Switching to clocksource jz_clocksource
+[    0.051958] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.051985] DWC IN OTG MODE
+[    0.052626] dwc2 dwc2: Keep PHY ON
+[    0.052638] dwc2 dwc2: Using Buffer DMA mode
+[    0.052651] dwc2 dwc2: Core Release: 3.00a
+[    0.052705] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.052734] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.053558] hub 1-0:1.0: USB hub found
+[    0.053585] hub 1-0:1.0: 1 port detected
+[    0.053704] dwc2 dwc2: DWC2 Host Initialized
+[    0.053907] NET: Registered protocol family 2
+[    0.054378] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    0.054408] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    0.054426] TCP: Hash tables configured (established 512 bind 512)
+[    0.054486] TCP: reno registered
+[    0.054501] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.054526] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.054776] NET: Registered protocol family 1
+[    0.054962] cfg80211: Calling CRDA to update world regulatory domain
+[    0.055222] RPC: Registered named UNIX socket transport module.
+[    0.055234] RPC: Registered udp transport module.
+[    0.055241] RPC: Registered tcp transport module.
+[    0.055249] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.055597] freq_udelay_jiffys[0].max_num = 10
+[    0.055607] cpufreq 	udelay 	loops_per_jiffy	
+[    0.055614] 12000	 59635	 59635	
+[    0.055622] 24000	 119271	 119271	
+[    0.055630] 60000	 298179	 298179	
+[    0.055637] 120000	 596358	 596358	
+[    0.055645] 200000	 993930	 993930	
+[    0.055652] 300000	 1490895	 1490895	
+[    0.055660] 600000	 2981790	 2981790	
+[    0.055668] 792000	 3935963	 3935963	
+[    0.055676] 1008000	 5009408	 5009408	
+[    0.055684] 1200000	 5963580	 5963580	
+[    0.060548] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.061480] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.061845] msgmni has been set to 69
+[    0.063114] io scheduler noop registered
+[    0.063161] io scheduler cfq registered (default)
+[    0.064616] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.155574] dwc2 dwc2: ID PIN CHANGED!
+[    0.539106] console [ttyS1] enabled
+[    0.542887] jz-uart.2: ttyS2 at MMIO 0x10032000 (irq = 57) is a uart2
+[    0.552954] brd: module loaded
+[    0.557772] loop: module loaded
+[    0.561608] zram: Created 2 device(s) ...
+[    0.565840] logger: created 256K log 'log_main'
+[    0.571068] jz SADC driver registeres over!
+[    0.576514] jz TCU driver register completed
+[    0.581286] the id code = 207017, the flash name is XM25QH64A
+[    0.587270] JZ SFC Controller for SFC channel 0 driver register
+[    0.593418] 5 cmdlinepart partitions found on MTD device jz_sfc
+[    0.599536] Creating 5 MTD partitions on "jz_sfc":
+[    0.604510] 0x000000000000-0x000000040000 : "boot"
+[    0.609946] 0x000000040000-0x0000001b0000 : "kernel"
+[    0.615555] 0x0000001b0000-0x0000002b0000 : "root"
+[    0.620926] 0x0000002b0000-0x000000310000 : "config"
+[    0.626553] 0x000000310000-0x000000800000 : "appfs"
+[    0.632097] SPI NOR MTD LOAD OK
+[    0.635410] tun: Universal TUN/TAP device driver, 1.6
+[    0.640630] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.647163] Bus Mode Reg after reset: 0x00020101, cnt=0
+[    0.653583] Bus Mode Reg after reset: 0x00020101, cnt=1
+[    0.659977] Bus Mode Reg after reset: 0x00020101, cnt=2
+[    0.666382] Bus Mode Reg after reset: 0x00020101, cnt=3
+[    0.672785] Bus Mode Reg after reset: 0x00020101, cnt=4
+[    0.679178] Bus Mode Reg after reset: 0x00020101, cnt=5
+[    0.685581] Bus Mode Reg after reset: 0x00020101, cnt=6
+[    0.691985] Bus Mode Reg after reset: 0x00020101, cnt=7
+[    0.698379] Bus Mode Reg after reset: 0x00020101, cnt=8
+[    0.704781] Bus Mode Reg after reset: 0x00020101, cnt=9
+[    0.711176] func:jz_mii_bus_probe, synopGMAC_reset failed
+[    0.716777] jz_mii_bus: probe of jz_mii_bus.0 failed with error -1
+[    0.723236] =======>gmacdev = 0x821e9900<================
+[    0.728817] =========>gmacdev->MacBase = 0xb34b0000 DmaBase = 0xb34b1000
+[    0.735759] Bus Mode Reg after reset: 0x00020101, cnt=0
+[    0.742164] Bus Mode Reg after reset: 0x00020101, cnt=1
+[    0.748559] Bus Mode Reg after reset: 0x00020101, cnt=2
+[    0.754962] Bus Mode Reg after reset: 0x00020101, cnt=3
+[    0.761365] Bus Mode Reg after reset: 0x00020101, cnt=4
+[    0.767758] Bus Mode Reg after reset: 0x00020101, cnt=5
+[    0.774161] Bus Mode Reg after reset: 0x00020101, cnt=6
+[    0.780556] Bus Mode Reg after reset: 0x00020101, cnt=7
+[    0.786958] Bus Mode Reg after reset: 0x00020101, cnt=8
+[    0.793361] Bus Mode Reg after reset: 0x00020101, cnt=9
+[    0.799755] func:jz_mac_probe, synopGMAC_reset failed
+[    0.804989] jz_mac: probe of jz_mac.0 failed with error -1
+[    0.810755] usbcore: registered new interface driver zd1201
+[    0.816829] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.861490] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.866861] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.912408] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.918029] TCP: cubic registered
+[    0.921501] NET: Registered protocol family 17
+[    0.926820] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.934005] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.945247] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+[    0.953053] Freeing unused kernel memory: 236K (80435000 - 80470000)
+welcome to ipc
+[RCS]: /etc/init.d/S01udev
+mdev is ok......
+[RCS]: /etc/init.d/S02moutfs
+mount param fs dir.
+param fs mounted.
+mount app fs.
+app fs mounted.
+[RCS]: /etc/init.d/S80network
+ifconfig: SIOCSIFHWADDR: No such device
+ifconfig: SIOCSIFADDR: No such device
+route: SIOCADDRT: Network is unreachable
+[RCS]: /etc/init.d/S90decompress
+Mount squashfs or nfs files done !
+/
+
+
+ipc login: /
+[    3.920413] name : i2c-gpio1 nr : 1
+[    3.927708] name : i2c0 nr : 0
+[    4.011573] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[    4.018691] i2c i2c-0: --I2C txabrt:
+[    4.022427] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[    4.029017] error: sensor_read,305 ret = -5
+[    4.033372]  sensor_read: addr=0xa value = 0x0
+[    4.037972] err sensor read addr = 0xa, value = 0x0
+[    4.131980]  sensor_read: addr=0x3107 value = 0xcb
+[    4.221892]  sensor_read: addr=0x3107 value = 0xcb
+[    4.227358]  sensor_read: addr=0x3108 value = 0x17
+[    4.232327] info: success sensor find : sc2332
+sensor :sc2332
+--------------------
+isp_clk=200000000
+
+--nrvbs 2
+[    4.561846] @@@@ tx-isp-probe ok(version H20210512a), compiler date=May 14 2021 @@@@@
+[    4.613620] jz_codec_register: probe() successful!
+[    5.031651] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a1a2a000)
+[    5.040835] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a1d51000)
+[    5.050121] dma dma0chan26: Channel 26 have been requested.(phy id 5,type 0x04 desc a1a2c000)
+cp: can't stat '/mnt/flash/Server/default_cfg/CameraInfo_normal': No such file or directory
+SetResolution=3M
+SENSOR sc2332
+DEVICEID SC2332
+[    5.131649] jz_pwm_probe[219] d_name = tcu_chn0
+[    5.138729] jz_pwm_probe[219] d_name = tcu_chn1
+[    5.147390] The version of PWM driver is H20180309a
+[    5.161733] request pwm channel 0 successfully
+[    5.166336] request pwm channel 1 successfully
+[    5.179967] pwm-jz pwm-jz: jz_pwm_probe register ok !
+             total         used         free       shared      buffers
+Mem:         35652        13272        22380            0         1092
+-/+ buffers:              12180        23472
+Swap:            0            0            0
+             total         used         free       shared      buffers
+Mem:         35652        10240        25412            0          412
+-/+ buffers:               9828        25824
+Swap:            0            0            0
+ls: /dev/mmcblk*: No such file or directory
+rmdir: '/tmp/mmc': No such file or directory
+
+hi3518e = 0, hi3516a_board = 0, hi3518ev200 = 0, hi3516cv300 = 0, hi3519V101 = 0, hi3516ev200 = 0
+gk7102 = 0
+gk7101 = 0
+hi3516cv100 = 0
+hi3516cv500 = 0
+mstar = 0
+isvptx0 = 4
+ICEtype = 0
+DeviceTypeOffset = 0
+
+device type is V6202IR-SC2332 DeviceID 159
+_HisiTypeCheck multiple = 0
+_HisiTypeCheck g_Product_Type: 0 g_Product_Index: 0 Hisi_Type: 0
+shared memory size 16
+shared memory id:0
+__ICP204____Success____
+ifconfig: SIOCSIFHWADDR: No such device
+check /mnt/flash/data/NetInfo info success .
+delete old gateway error ! 
+dhcp enable = 1
+dhcp enable
+Detect_EthLink err:No such deviceDetect_EthLink err:No such deviceDetect_EthLink err:No such device[dhcp]  FunCheckNetstat_link ret ====== -2!
+gbj read domecfg
+{"adc":{"dton":900,"ntod":400,"polarity":0},"audio":{"type":2},"event":{"autotrace":0,"enable":1,"type":1,"vdir_trace":0},"image":{"mirror":0},"led":{"irlevel":0,"type":1,"wlevel":0},"motor":{"hdir":1,"hlocat":50,"hmaxstep":3250,"hspeed":300,"vdir":0,"vlocat":50,"vmaxstep":1150,"vspeed":200},"resolution":{"main":3}}
+[mainItem]=adc
+dton=900
+ntod=400
+polarity=0
+[mainItem]=audio
+type=2
+[mainItem]=event
+enable=1
+type=1
+autotrace=0
+vdir_trace=0
+[mainItem]=image
+mirror=0
+[mainItem]=led
+irlevel=0
+type=1
+wlevel=0
+[mainItem]=motor
+hdir=1
+hmaxstep=3250
+hspeed=300
+hlocat=50
+vdir=0
+vmaxstep=1150
+vspeed=200
+vlocat=50
+[mainItem]=resolution
+main=3
+audio_type(2)
+res_main(3)
+g_dualSupport=1 dual_gpioCfgInfo=0 gVoiceType=2
+get sensor SC2332
+SENSOR_TYPE 37
+
+hi3518e = 0, hi3516a_board = 0, hi3518ev200 = 0, hi3516cv300 = 0, hi3519V101 = 0, hi3516ev200 = 0
+gk7102 = 0
+gk7101 = 0
+hi3516cv100 = 0
+hi3516cv500 = 0
+mstar = 0
+isvptx0 = 4
+ICEtype = 0
+DeviceTypeOffset = 0
+
+bufid :0 key :0x142c7a1          shared memory size 512012
+shared memory id:32769
+semid :0
+semnum has not been set yet,key :21153697
+bufid :1 key :0x23e53e1          shared memory size 204812
+shared memory id:65538
+semid :32769
+semnum has not been set yet,key :37639137
+bufid :2 key :0x345de78          shared memory size 204812
+shared memory id:98307
+semid :65538
+semnum has not been set yet,key :54910584
+bufid :5 key :0x61a3253          shared memory size 16396
+shared memory id:131076
+semid :98307
+semnum has not been set yet,key :102380115
+shared memory size 36
+shared memory id:163845
+shared memory size 1560
+shared memory id:196614
+shared memory size 20
+shared memory id:229383
+major_venc: H265 minor_venc: H264
+gbj getresolution=31
+outwidth=2304 outheight=1296
+outwidth=640 outheight=480
+[0;32;32m-------- compile time: May 31 2021, 11:19:42 --------[m
+[0;32;32m-------- software version: V1.04.11_Tuya-210531 --------[m
+isvp chip 121DA
+[    7.972569] sc2332 chip found @ 0x30 (i2c0)
+[    7.991500] sensor driver version H20200915a
+gbj read domecfg
+{"adc":{"dton":900,"ntod":400,"polarity":0},"audio":{"type":2},"event":{"autotrace":0,"enable":1,"type":1,"vdir_trace":0},"image":{"mirror":0},"led":{"irlevel":0,"type":1,"wlevel":0},"motor":{"hdir":1,"hlocat":50,"hmaxstep":3250,"hspeed":300,"vdir":0,"vlocat":50,"vmaxstep":1150,"vspeed":200},"resolution":{"main":3}}
+[mainItem]=adc
+dton=900
+ntod=400
+polarity=0
+[mainItem]=audio
+type=2
+[mainItem]=event
+enable=1
+type=1
+autotrace=0
+vdir_trace=0
+[mainItem]=image
+mirror=0
+[mainItem]=led
+irlevel=0
+type=1
+wlevel=0
+[mainItem]=motor
+hdir=1
+hmaxstep=3250
+hspeed=300
+hlocat=50
+vdir=0
+vmaxstep=1150
+vspeed=200
+vlocat=50
+[mainItem]=resolution
+main=3
+audio_type(2)
+res_main(3)
+g_dualSupport=1 dual_gpioCfgInfo=0 gVoiceType=2
+
+hi3518e = 0, hi3516a_board = 0, hi3518ev200 = 0, hi3516cv300 = 0, hi3519V101 = 0, hi3516ev200 = 0
+gk7102 = 0
+gk7101 = 0
+hi3516cv100 = 0
+hi3516cv500 = 0
+mstar = 0
+isvptx0 = 4
+ICEtype = 0
+DeviceTypeOffset = 0
+
+default max pan 3250, tilt 1150
+device type is V6202IR-SC2332 DeviceID 159
+WIFI ON
+
+gSelfAlgType= 0 hisi_ir_flag= 0 gOnlyNetCtrl= 0
+
+____gHardwareversion: 0
+sha_ok is sha_ok
+!!!!!! APP : sha_204 check passed !!!!!!
+== IR module will not be called in the device. ==
+== prepared zoom lens will not be used ==
+== prepared zoom lens wi[    8.232304] sc2332 stream on
+ll not be used ==
+
+=== get device_type:1, device_af:0, device_ir:0, lens_type:4 sensor_type:1 ===
+
+Alarm_In_Num = 1 , Alarm_Out_Num = 1
+Detect_EthLink err:No such device
+Just restart Phy on app!
+---- FPGA board is ready ----
+  Board UID : 30AB6E51
+  Board HW ID : 72000460
+  Board rev.  : 5DE5A975
+  Board date  : 20190326
+-----------------------------
+ifconfig: SIOCGIFFLAGS: No such device
+Detect_EthLink err:No such devicedevice without phy !
+hisi test : mw_server pid = 220
+sample_system_init success !
+sample_framesource_init success !
+IMP_Encoder_CreateGroup success !
+!! The specified ScalingList is not allowed; it will be adjusted!!
+
+sample_encoder_init success !
+[1;32;40mINFO(jzdl): jzdl version:1.1.1(00010101_b4a8f4f)  built:20200701-0911(4.7.2 simd)[0m
+[1;32;40mINFO(persondet): Ingenic DL PersonDet Promotion Version:1.1.2(00010102)  built:20201118-1147(4.7.2 simd)[0m
+imp_log_inf-ivs_move_start:766 grp_num: 0 chn_num: 0
+
+start_x=0,start_y=0;start_x=128,start_y=0;start_x=256,start_y=0;start_x=384,start_y=0;start_x=512,start_y=0;start_x=0,start_y=96;start_x=128,start_y=96;start_x=256,start_y=96;start_x=384,start_y=96;start_x=512,start_y=96;start_x=0,start_y=192;start_x=128,start_y=192;start_x=256,start_y=192;start_x=384,start_y=192;start_x=512,start_y=192;start_x=0,start_y=288;start_x=128,start_y=288;start_x=256,start_y=288;start_x=384,start_y=288;start_x=512,start_y=288;start_x=0,start_y=384;start_x=128,start_y=384;start_x=256,start_y=384;start_x=384,start_y=384;start_x=512,start_y=384;
+imp_log_inf-sample_ivs_move_get_result_process:638 chn_num: 0
+sdk_app has not initialed yet !
+[    9.481441] codec_set_device: set device: MIC...
+add [syslogd] to watchdog list.
+add [sdk_app] to watchdog list.
+add [hiapp] to watchdog list.
+[    9.951404] codec_set_device: set device: speaker...
+sdk_app has not initialed yet !
+chn=0 duty=100
+chn=0 duty=0
+sdk_app has not initialed yet !
+chn=1 duty=100
+chn=1 duty=0
+sdk_app has not initialed yet !
+process_client_request start
+stream is 2
+stream is 1
+stream is 0
+hiapp audioEnable 1, audioFormat 0, audioInput 5, audioOutput 7, audioSampleRate 8000
+get /mnt/flash/data/SysRebootInfo info failure .
+get /mnt/flash/data/WifiBitrateInfo info failure .
+get /mnt/flash/data/AFMoveInfo info failure .
+default Zoomspeed 4, iMultiple 0
+get /mnt/flash/data/AFMoveInfo info failure .
+get /mnt/flash/data/MlsInfo info failure .
+Fun:FunInitSystem Line:456 Initialize SysParamInit OK.
+!!!!!!ntp timezone change :timezone=26  daylight=0
+bufsize[0] 512000
+bufsize[1] 204800
+bufsize[2] 204800
+hiapp max frame size [0]:512000 [1]131072 [2]204800
+hank_Play_AudioFile pri 3, file /mnt/flash/Server/resource/audio/en/alarm2.g711u, repeat 1, duration -1, block 1
+hank_Play_AudioFile_now begin /mnt/flash/Server/resource/audio/en/alarm2.g711u
+mw_table_element_get motion error!
+hank_Play_AudioFile_now /mnt/flash/Server/resource/audio/en/alarm2.g711u end
+total_data_len 20791, play_time 2500, audio_time 2598
+dhcp flg = 1
+dhcp_enable = 1
+DHCP enabled~~~~~~~~
+------DDNS_config_params
+set_setstat
+[   16.762542] [VERSION]:Hi3881V100R001C00SPC021 2020-10-14 20:25:00
+[   16.777108] oam_main_init SUCCESSFULLY!
+
+[   16.793882] wal_customize_init SUCCESSFULLY!
+
+[   16.805955] oal_main_init SUCCESSFULLY
+
+[   16.820722] frw_main_init SUCCESSFULLY!
+
+[   16.828686] hi_wifi_plat_init SUCCESSFULLY
+
+[   16.904344] mmc1: queuing unknown CIS tuple 0x91 (5 bytes)
+[   16.914466] mmc1: new SDIO card at address 0001
+[   16.942712] hcc_hmac_init SUCCESSFULLY
+
+[   16.947948] plat_firmware_init SUCCESSFULLY
+
+[   17.171131] Device is Ready!
+
+[   17.176123] wlan_pm_open SUCCESSFULLY!!
+
+[   17.184014] hmac_main_init SUCCESSULLY
+
+[   17.202045] firmware_sync_cfg_paras_to_wal_customize SUCCESSFULLY
+
+[   17.230689] wal_main_init SUCCESSFULLY
+
+[   17.239411] hi_wifi_host_init SUCCESSFULLY
+
+[   17.251715] WiFi driver init SUCCESSFULLY!
+
+[   17.314575] +RCALDATA:Efuse cali chance(s) left:0 times.
+
+[   17.320195] +RCALDATA:freq_offset -15
+
+[   17.324103] +RCALDATA:band_pwr_offset_0 15
+
+[   17.328424] +RCALDATA:band_pwr_offset_1 15
+
+[   17.332761] +RCALDATA:band_pwr_offset_2 15
+
+[   17.337082] +RCALDATA:rate_pwr_offset_11n 0x0
+
+[   17.341695] WARN: ch0 frame interrupt time ahead of pre dequeue time
+[   17.348511] +RCALDATA:rate_pwr_offset_11g 0x0
+
+[   17.353131] +RCALDATA:rate_pwr_offset_11b 0x0
+
+[   17.357725] +RCALDATA:dbb_scale_0 0x6b6b6d6e
+
+[   17.362255] +RCALDATA:dbb_scale_1 0x67676767
+
+[   17.366755] +RCALDATA:dbb_scale_2 0x50545f60
+
+[   17.371256] +RCALDATA:dbb_scale_3 0x565e5e5e
+
+[   17.375771] +RCALDATA:dbb_scale_4 0x4f4f5656
+
+[   17.380273] +RCALDATA:freq_and_band_pwr_hybrid_offset 0xf10f0f0f
+
+[   17.386582] OK
+
+mw_table_element_get motion error!
+[Wifi_build_scan_wpaConfig]--[1073] leftNums === 0 offsetValue === -15
+killall: udhcpc: no process killed
+killall: udhcpd: no process killed
+killall: hostapd: no process killed
+Successfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device[   19.786160] OK
+
+
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+[wlan_wpa_open_connection]--[691] gs_sta.s_fd 7 local.sun_path /var/run/wpa_supplicant/wpa_223_0
+[wlan_wpa_open_connection]--[700] gs_sta.s_fd 7 remote.sun_path /var/run/wpa_supplicant/wlan0
+
+==============================================================
+Scan List:
+  ID / SSID / MAC Address / Channel / Security / Signal Level
+  00  Omega-4C9D  40:a3:6b:c1:4c:9d  6  WPA_WPA2_PSK  33
+
+==============================================================
+Scan List:
+  ID / SSID / MAC Address / Channel / Security / Signal Level
+  00  Omega-4C9D  40:a3:6b:c1:4c:9d  6  WPA_WPA2_PSK  33
+Wifi_build_scan_wpaConfig hotspotNum 1
+Detect_ap0_up start detect ======================
+[   22.289128] OK
+
+Detect_ra0_up start detect ======================
+[Wifi_Load_Module] get wifi mode ==== 0
+[Wifi_Load_Module] ssid=,key=
+[Wifi_Load_Module] wifi work mode ==== 0
+[   23.079941] OK
+
+[Wifi_Load_Module] wifiDriver_mode === 0
+Detect_ra0_up start detect ======================
+Detect_ap0_up start detect ======================
+killall: udhcpc: no process killed
+killall: wpa_supplicant: no process killed
+killall: hostapd: no process killed
+mw_table_element_get motion error!
+Wifi_AP_Start wifiDriver_mode === 0
+Configuration file: /etc/hostapd.conf
+Failed to create interface mon.ap0: -122 (Operation not supported)
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+ap0: Could not connect to kernel driver
+Using interface ap0 with hwaddr 00:2a:2a:7e:c1:0e and ssid "Hicam-C46E5B000000"
+ap0: interface state UNINITIALIZED->ENABLED
+ap0: AP-ENABLED 
+
+To start udhcpd server
+killall: udhcpd: no process killed
+sed: can't create temp file '/etc/udhcpd.confk5s7gX': Read-only file system
+ntpconfig : ip:time.windows.com
+time: 23:59:00
+ interval:24
+enable:1
+Fun:FunInitSystem Line:473 [NetParmInit] is OKOKOL.
+
+Action_Record_Set_ManualEnable : stop
+======== we are going to init share buff ========
+Fun:FunInitSystem Line:479 [InitShBuf] is OKOKOL.
+NetAccess is 1
+
+====== we are going to init af params ======
+sdk_app : READ from fifo : head.symbol=SAFM
+sdk_app : find_section() : symbol=SAFM
+sdk_app : found fun_name is SAFM
+
+	======== msgmanage thread start ========
+===== Thread_ShareFD thread create =====
+
+	======== msgmanage thread start ========
+=========== NetReqProc thread start ===========
+
+ video video servport==90
+======== Detect echo thread start ========
+=========TH_RecvAN========
+alarmserver bind OKOK!!!
+sdk_app : READ from fifo : head.symbol=SAFZS
+sdk_app : find_section() : symbol=SAFZS
+sdk_app : found fun_name is SAFZS
+sdk_app : READ from fifo : head.symbol=SAFFS
+sdk_app : find_section() : symbol=SAFFS
+sdk_app : found fun_name is SAFFS
+
+====== we are going to init image ======
+sdk_app : READ from fifo : head.symbol=SFLIK
+sdk_app : find_section() : symbol=SFLIK
+sdk_app : found fun_name is SFLIK
+sdk_app : READ from fifo : head.symbol=SBLC
+sdk_app : find_section() : symbol=SBLC
+sdk_app : found fun_name is SBLC
+sdk_app : READ from fifo : head.symbol=SBRI
+sdk_app : find_section() : symbol=SBRI
+sdk_app : found fun_name is SBRI
+sdk_app : READ from fifo : head.symbol=SCON
+sdk_app : find_section() : symbol=SCON
+sdk_app : found fun_name is SCON
+sdk_app : READ from fifo : head.symbol=SDWR
+sdk_app : find_section() : symbol=SDWR
+sdk_app : found fun_name is SDWR
+sdk_app : READ from fifo : head.symbol=SDWRL
+sdk_app : find_section() : symbol=SDWRL
+sdk_app : found fun_name is SDWRL
+sdk_app : READ from fifo : head.symbol=SHUE
+sdk_app : find_section() : symbol=SHUE
+sdk_app : found fun_name is SHUE
+sdk_app : READ from fifo : head.symbol=SSHUT
+sdk_app : find_section() : symbol=SSHUT
+sdk_app : found fun_name is SSHUT
+sdk_app : READ from fifo : head.symbol=SGAIN
+sdk_app : find_section() : symbol=SGAIN
+sdk_app : found fun_name is SGAIN
+sdk_app : READ from fifo : head.symbol=SMCTF
+sdk_app : find_section() : symbol=SMCTF
+sdk_app : found fun_name is SMCTF
+sdk_app : READ from fifo : head.symbol=SSAT
+sdk_app : find_section() : symbol=SSAT
+sdk_app : found fun_name is SSAT
+sdk_app : READ from fifo : head.symbol=SAWB
+sdk_app : find_section() : symbol=SAWB
+sdk_app : found fun_name is SAWB
+sdk_app : READ from fifo : head.symbol=SMIR
+sdk_app : find_section() : symbol=SMIR
+sdk_app : found fun_name is SMIR
+sdk_app : READ from fifo : head.symbol=SSHA
+sdk_app : find_section() : symbol=SSHA
+sdk_app : found fun_name is SSHA
+sdk_app : READ from fifo : head.symbol=SIRE
+sdk_app : find_section() : symbol=SIRE
+sdk_app : found fun_name is SIRE
+
+====== infrared: change to daytime mode. ======
+
+
+=== awb_mode:0 ===
+sdk_app : READ from fifo : head.symbol=SIRC
+sdk_app : find_section() : symbol=SIRC
+sdk_app : found fun_name is SIRC
+======>>>hiapp set mode: 1
+sdk_app : READ from fifo : head.symbol=SIRC
+sdk_app : find_section() : symbol=SIRC
+sdk_app : found fun_name is SIRC
+sdk_app : READ from fifo : head.symbol=SIRCT
+sdk_app : find_section() : symbol=SIRCT
+sdk_app : found fun_name is SIRCT
+sdk_app : READ from fifo : head.symbol=SC2BW
+sdk_app : find_section() : symbol=SC2BW
+sdk_app : found fun_name is SC2BW
+sdk_app : READ from fifo : head.symbol=SBW2C
+sdk_app : find_section() : symbol=SBW2C
+sdk_app : found fun_name is SBW2C
+sdk_app : READ from fifo : head.symbol=SCOL
+sdk_app : find_section() : symbol=SCOL
+sdk_app : found fun_name is SCOL
+sdk_app : READ from fifo : head.symbol=SSAT
+sdk_app : find_section() : symbol=SSAT
+sdk_app : found fun_name is SSAT
+sdk_app : READ from fifo : head.symbol=SHLC
+sdk_app : find_section() : symbol=SHLC
+sdk_app : found fun_name is SHLC
+sdk_app : READ from fifo : head.symbol=SAEXP
+sdk_app : find_section() : symbol=SAEXP
+sdk_app : found fun_name is SAEXP
+sdk_app : READ from fifo : head.symbol=SEXP
+sdk_app : find_section() : symbol=SEXP
+sdk_app : found fun_name is SEXP
+sdk_app : READ from fifo : head.symbol=SAFC
+sdk_app : find_section() : symbol=SAFC
+sdk_app : found fun_name is SAFC
+sdk_app : READ from fifo : head.symbol=SAFG
+sdk_app : find_section() : symbol=SAFG
+sdk_app : found fun_name is SAFG
+sdk_app : READ from fifo : head.symbol=SAFGL
+sdk_app : find_section() : symbol=SAFGL
+err:can not find right section name
+== app head == symbol:SAFGL, msg_length 4
+== app recv from mw == symbol:SAFGL, result:-1
+clean up cache!
+sdk_app : READ from fifo : head.symbol=SLSC
+sdk_app : find_section() : symbol=SLSC
+sdk_app : found fun_name is SLSC
+sdk_app : READ from fifo : head.symbol=SDIS
+sdk_app : find_section() : symbol=SDIS
+sdk_app : found fun_name is SDIS
+sdk_app : READ from fifo : head.symbol=SLOB
+sdk_app : find_section() : symbol=SLOB
+sdk_app : found fun_name is SLOB
+sdk_app : process req : qmsg.cType=49,fun_name=SAFM
+===>>>sdk_app set multiple: 0
+sdk_app : READ from fifo : head.symbol=SROT
+sdk_app : find_section() : symbol=SROT
+sdk_app : found fun_name is SROT
+sdk_app : READ from fifo : head.symbol=SLDC
+sdk_app : find_section() : symbol=SLDC
+sdk_app : found fun_name is SLDC
+sdk_app : READ from fifo : head.symbol=SLDCL
+sdk_app : find_section() : symbol=SLDCL
+err:can not find right section name
+clean up cache!
+== app head == symbol:SLDCL, msg_length 4
+== app recv from mw == symbol:SLDCL, result:-1
+sdk_app : READ from fifo : head.symbol=SGAMA
+sdk_app : find_section() : symbol=SGAMA
+sdk_app : found fun_name is SGAMA
+sdk_app : READ from fifo : head.symbol=SDZM
+sdk_app : find_section() : symbol=SDZM
+sdk_app : found fun_name is SDZM
+[ImageManage_Set_DualMode_priv]---[1493] dualMode === 2 lightValue === 50 DayNightContrl === 1
+sdk_app : READ from fifo : head.symbol=SDULM
+sdk_app : find_section() : symbol=SDULM
+sdk_app : found fun_name is SDULM
+
+====== we are going to init encode ======
+DevicePixel 2073600, Resolution 10
+sdk_app : READ from fifo : head.symbol=SRES
+sdk_app : find_section() : symbol=SRES
+sdk_app : found fun_name is SRES
+sdk_app : READ from fifo : head.symbol=SBIT
+sdk_app : find_section() : symbol=SBIT
+sdk_app : found fun_name is SBIT
+sdk_app : READ from fifo : head.symbol=SFS
+sdk_app : find_section() : symbol=SFS
+sdk_app : found fun_name is SFS
+sdk_app : READ from fifo : head.symbol=SGOP
+sdk_app : find_section() : symbol=SGOP
+sdk_app : found fun_name is SGOP
+sdk_app : READ from fifo : head.symbol=SQUAL
+sdk_app : find_section() : symbol=SQUAL
+sdk_app : found fun_name is SQUAL
+sdk_app : READ from fifo : head.symbol=SRES
+sdk_app : find_section() : symbol=SRES
+sdk_app : found fun_name is SRES
+sdk_app : READ from fifo : head.symbol=SBIT
+sdk_app : find_section() : symbol=SBIT
+sdk_app : found fun_name is SBIT
+sdk_app : READ from fifo : head.symbol=SFS
+sdk_app : find_section() : symbol=SFS
+sdk_app : found fun_name is SFS
+sdk_app : READ from fifo : head.symbol=SGOP
+sdk_app : find_section() : symbol=SGOP
+sdk_app : found fun_name is SGOP
+sdk_app : READ from fifo : head.symbol=SQUAL
+sdk_app : find_section() : symbol=SQUAL
+sdk_app : found fun_name is SQUAL
+sdk_app : READ from fifo : head.symbol=SFS
+sdk_app : find_section() : symbol=SFS
+sdk_app : found fun_name is SFS
+sdk_app : READ from fifo : head.symbol=SQUAL
+sdk_app : process req : qmsg.cType=50,fun_name=SAFZS
+===>>>sdk_app set zoom speed: 4
+sdk_app : find_section() : symbol=SQUAL
+sdk_app : found fun_name is SQUAL
+sdk_app : READ from fifo : head.symbol=SMDS
+sdk_app : find_section() : symbol=SMDS
+sdk_app : found fun_name is SMDS
+sdk_app : READ from fifo : head.symbol=SPD
+sdk_app : find_section() : symbol=SPD
+sdk_app : found fun_name is SPD
+enc_darea.area_num 1, sizeof(ENC_DAREA_ST) 104
+sdk_app : READ from fifo : head.symbol=SAREA
+sdk_app : find_section() : symbol=SAREA
+sdk_app : found fun_name is SAREA
+sdk_app : READ from fifo : head.symbol=SLINE
+sdk_app : find_section() : symbol=SLINE
+err:can not find right section name
+== app head == symbol:SLINE, msg_length 104
+== app recv from mw == symbol:SLINE, result:-1
+Privacy value = 1
+Privacy arean = 0 enable = 0
+Privacy arean = 1 enable = 0
+Privacy arean = 2 enable = 0
+Privacy arean = 3 enable = 0
+clean up cache!
+sdk_app : READ from fifo : head.symbol=STZ
+sdk_app : find_section() : symbol=STZ
+sdk_app : found fun_name is STZ
+sdk_app : READ from fifo : head.symbol=SDN
+sdk_app : find_section() : symbol=SDN
+sdk_app : found fun_name is SDN
+Time is invalid !
+sdk_app : READ from fifo : head.symbol=SOSD
+sdk_app : find_section() : symbol=SOSD
+sdk_app : found fun_name is SOSD
+sdk_app : READ from fifo : head.symbol=SOSD
+sdk_app : find_section() : symbol=SOSD
+sdk_app : found fun_name is SOSD
+sdk_app : process req : qmsg.cType=51,fun_name=SAFFS
+===>>>sdk_app set focus speed: 4
+sdk_app : READ from fifo : head.symbol=SOSD
+sdk_app : find_section() : symbol=SOSD
+sdk_app : found fun_name is SOSD
+sdk_app : READ from fifo : head.symbol=SOSD
+sdk_app : find_section() : symbol=SOSD
+sdk_app : found fun_name is SOSD
+sdk_app : READ from fifo : head.symbol=SOSD
+sdk_app : find_section() : symbol=SOSD
+sdk_app : found fun_name is SOSD
+sdk_app : READ from fifo : head.symbol=SOSD
+sdk_app : find_section() : symbol=SOSD
+sdk_app : found fun_name is SOSD
+Thread_status_check creat ok!
+MOTO_TYPE=0,TAIDE_TYPE=0
+TH_AlarmProcess_API creat ok!
++++++++++++++++ddns start++++++++++++++
+Time is invalid !
+Create thread <cameramode_task> successful !
+Start_Record_new !! 
+=================== Thread IR start! ===================
+sdk_app : process req : qmsg.cType=0,fun_name=SFLIK
+!!!!!! thread ntp_start_thread create sucessfully !!!!!!
+sdk_app : READ from fifo : head.symbol=SBRI
+sdk_app : find_section() : symbol=SBRI
+sdk_app : found fun_name is SBRI
+new rec module start
+
+====== infrared: change to nighttime. ======
+sdk_app : READ from fifo : head.symbol=SCON
+sdk_app : find_section() : symbol=SCON
+sdk_app : found fun_name is SCON
+sdk_app : READ from fifo : head.symbol=SSAT
+sdk_app : find_section() : symbol=SSAT
+sdk_app : found fun_name is SSAT
+sdk_app : READ from fifo : head.symbol=SSHA
+sdk_app : find_section() : symbol=SSHA
+sdk_app : found fun_name is SSHA
+sdk_app : READ from fifo : head.symbol=SHUE
+sdk_app : find_section() : symbol=SHUE
+sdk_app : found fun_name is SHUE
+sdk_app : READ from fifo : head.symbol=SMCTF
+sdk_app : find_section() : symbol=SMCTF
+sdk_app : found fun_name is SMCTF
+sdk_app : READ from fifo : head.symbol=SIRC
+sdk_app : find_section() : symbol=SIRC
+sdk_app : found fun_name is SIRC
+sdk_app : process req : qmsg.cType=1,fun_name=SBLC
+-----mw_img_set_blc_api :   value==0------
+sdk_app : process req : qmsg.cType=12,fun_name=SBRI
+sdk_app : process req : qmsg.cType=13,fun_name=SCON
+sdk_app : process req : qmsg.cType=2,fun_name=SDWR
+sdk_app : process req : qmsg.cType=3,fun_name=SDWRL
+sdk_app : process req : qmsg.cType=16,fun_name=SHUE
+sdk_app : process req : qmsg.cType=5,fun_name=SSHUT
+sdk_app : process req : qmsg.cType=6,fun_name=SGAIN
+sdk_app : process req : qmsg.cType=28,fun_name=SMCTF
+sdk_app : process req : qmsg.cType=14,fun_name=SSAT
+sdk_app : process req : qmsg.cType=29,fun_name=SAWB
+b_gain = 26,r_gain = 24
+sdk_app : process req : qmsg.cType=30,fun_name=SMIR
+sdk_app : process req : qmsg.cType=17,fun_name=SSHA
+sdk_app : process req : qmsg.cType=8,fun_name=SIRE
+chn=1 duty=0
+not SU_PWM_Enable !
+sdk_app : process req : qmsg.cType=7,fun_name=SIRC
+======>>>change icr_control_mode: 2
+route: SIOCADDRT: Network is down
+sdk_app : process req : qmsg.cType=7,fun_name=SIRC
+======>>>change icr_control_mode: 3
+sdk_app : process req : qmsg.cType=9,fun_name=SIRCT
+senconds = 1
+sdk_app : process req : qmsg.cType=10,fun_name=SC2BW
+***set c2bwthr = 20****
+sdk_app : process req : qmsg.cType=11,fun_name=SBW2C
+***set bw2cthr = 70****
+sdk_app : process req : qmsg.cType=15,fun_name=SCOL
+sdk_app : process req : qmsg.cType=14,fun_name=SSAT
+sdk_app : process req : qmsg.cType=18,fun_name=SHLC
+-----mw_img_set_hlc_api :   value==0------
+sdk_app : process req : qmsg.cType=34,fun_name=SAEXP
+sdk_app : process req : qmsg.cType=19,fun_name=SEXP
+sdk_app : process req : qmsg.cType=20,fun_name=SAFC
+sdk_app : process req : qmsg.cType=21,fun_name=SAFG
+sdk_app : process req : qmsg.cType=22,fun_name=SLSC
+sdk_app : process req : qmsg.cType=23,fun_name=SDIS
+sdk_app : process req : qmsg.cType=24,fun_name=SLOB
+sdk_app : process req : qmsg.cType=25,fun_name=SROT
+sdk_app : process req : qmsg.cType=26,fun_name=SLDC
+sdk_app : process req : qmsg.cType=27,fun_name=SGAMA
+sdk_app : process req : qmsg.cType=35,fun_name=SDZM
+sdk_app : process req : qmsg.cType=57,fun_name=SDULM
+[mw_img_set_DUALM_Start]---[323] dual_led_Mode == 2 r_led_open == 1
+[mw_img_set_DUALM_Start]---[324] dayNightContrl == 1 ICR_STATE == 1 w_led_open == 0
+chn=1 duty=50
+sdk_app : process req : qmsg.cType=37,fun_name=SRES
+set stream 0 resolution:height:1296 width:2304
+____>> stream: 0 uWidth: 2304 uHeight: 1296
+____>> stream: 0 w: 2304 h: 1296 <<____
+____>> Same resolution <<____
+sdk_app : process req : qmsg.cType=38,fun_name=SBIT
+____>>isvp_enc_set_bitrate stream: 0 mode: 1 bitrate: 3072<<____
+____>> stream 0 stop <<____
+mw_table_element_get error 
+stream is 0
+sdk_app : process req : qmsg.cType=39,fun_name=SFS
+sdk_app : process req : qmsg.cType=40,fun_name=SGOP
+isvp_enc_set_gop 50 .
+sdk_app : process req : qmsg.cType=41,fun_name=SQUAL
+____>>isvp_enc_set_quality stream: 0,maxQp:42,minQp:24<<____
+sdk_app : process req : qmsg.cType=37,fun_name=SRES
+set stream 1 resolution:height:480 width:640
+____>> stream: 1 uWidth: 640 uHeight: 480
+____>> stream: 1 w: 640 h: 480 <<____
+____>> Same resolution <<____
+sdk_app : process req : qmsg.cType=38,fun_name=SBIT
+____>>isvp_enc_set_bitrate stream: 1 mode: 1 bitrate: 512<<____
+____>> stream 1 stop <<____
+!! The specified ScalingList is not allowed; it will be adjusted!!
+
+mw_table_element_get error 
+stream is 1
+sdk_app : process req : qmsg.cType=39,fun_name=SFS
+sdk_app : process req : qmsg.cType=40,fun_name=SGOP
+isvp_enc_set_gop 50 .
+sdk_app : process req : qmsg.cType=41,fun_name=SQUAL
+____>>isvp_enc_set_quality stream: 1,maxQp:42,minQp:24<<____
+sdk_app : process req : qmsg.cType=39,fun_name=SFS
+sdk_app : process req : qmsg.cType=41,fun_name=SQUAL
+____>>isvp_enc_set_quality stream: 2,maxQp:42,minQp:24<<____
+sdk_app : process req : qmsg.cType=54,fun_name=SMDS
+______sdk_app: enable = 1 sensitivity = 50
+sdk_app : process req : qmsg.cType=55,fun_name=SPD
+pd_set enable 1, sensitivity 50, draw 1, filter 1
+top=0,bottom=480,left=0,right=640
+sdk_app : process req : qmsg.cType=61,fun_name=SAREA
+sdk_app : process req : qmsg.cType=47,fun_name=STZ
+set time zone 26
+sdk_app : process req : qmsg.cType=48,fun_name=SDN
+set daynight 0
+sdk_app : process req : qmsg.cType=42,fun_name=SOSD
+sdk_app : process req : qmsg.cType=42,fun_name=SOSD
+sdk_app : process req : qmsg.cType=42,fun_name=SOSD
+sdk_app : process req : qmsg.cType=42,fun_name=SOSD
+sdk_app : process req : qmsg.cType=42,fun_name=SOSD
+sdk_app : process req : qmsg.cType=42,fun_name=SOSD
+chn=1 duty=0
+sdk_app : process req : qmsg.cType=12,fun_name=SBRI
+sdk_app : process req : qmsg.cType=13,fun_name=SCON
+sdk_app : process req : qmsg.cType=14,fun_name=SSAT
+sdk_app : process req : qmsg.cType=17,fun_name=SSHA
+sdk_app : process req : qmsg.cType=16,fun_name=SHUE
+sdk_app : process req : qmsg.cType=28,fun_name=SMCTF
+sdk_app : process req : qmsg.cType=7,fun_name=SIRC
+======>>>change icr_control_mode: 1
+[mw_DoubleLight_Func]--[679]  dayMode close rled!
+Dbg:[start_tuya_module]---[1244] start_tuya_module ===================
+
+
+Dbg:hk_tuya_init info: yxkcpfgt9b4dpbin hhwsc6be1c9d8b676329 f9FHQWaCZNwkjvZl8sRsdYi1dRXwzAYm 1
+
+
+hk_tuya_ReadWrite_IntFlag pValue ==== 0
+Err:fopen read /tmp/wifiConfigError failed!
+
+
+Dbg:hk_tuya_stream_init ===================
+
+
+Dbg:APssid  ==== SmartLife_8b676329
+
+
+Dbg:Wifi_Up
+
+
+Detect_ra0_up start detect ======================
+_WIFI_GetLinkQuality() = -2, s32Quality = -1
+Detect_ap0_up start detect ======================
+killall: udhcpc: no process killed
+killall: wpa_supplicant: no process killed
+Time is invalid !
+Time is invalid !
+ntp_check_time_from ntp6.aliyun.com ERROR
+
+ntp_check_time_from time.windows.comcn.ntp.org.cn ERROR
+
+ntp_check_time_from us.ntp.org.cn ERROR
+
+ntp_check_time_from de.ntp.org.cn ERROR
+
+ntp_check_time_from sgp.ntp.org.cn ERROR
+
+ntp_check_time_from 192.168.1.118 ERROR
+
+NO VALID NTP SERVER .Wifi_AP_Start wifiDriver_mode === 0
+Configuration file: /etc/hostapd.conf
+Failed to create interface mon.ap0: -122 (Operation not supported)
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+ap0: Could not connect to kernel driver
+Using interface ap0 with hwaddr 00:2a:2a:7e:c1:0e and ssid "SmartLife_8b676329"
+chn=1 duty=100
+[mw_DoubleLight_Func]--[644] NightMode automode no_md_triggered close wled and open rled=====
+mw_table_element_get motion error!
+imp_log_inf-ivs_move_stop:793 sample_ivs_move_get_result_stop ok
+ap0: interface state UNINITIALIZED->ENABLED
+ap0: AP-ENABLED 
+
+To start udhcpd server
+sed: can't create temp file '/etc/udhcpd.confSOdxcH': Read-only file system
+Dbg:tWifiConn.connStatus ==== 0
+
+
+killall: udhcpc: no process killed
+killall: wpa_supplicant: no process killed
+dhcp enable = 1
+/bin/sh: /mnt/flash/Server/LINUX/monitor: not found
+======== Detect echo thread start ========
+No such device: GetLocalIp(2)
+Cannot assign requested address: GetLocalIp(2)
+ioctl siocgifaddr errorioctl siocgifaddr errorHankBatchUpdateServer tcp serverIp:0.0.0.0	port:20203
+Configuration file: /etc/hostapd.conf
+Failed to create interface mon.ap0: -122 (Operation not supported)
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (No such file or directory)
+ap0: Could not connect to kernel driver
+Using interface ap0 with hwaddr 00:2a:2a:7e:c1:0e and ssid "SmartLife_8b676329"
+persondet:FPS: 0.04
+web_set_sensor=3
+[1;32;40mINFO(persondet): Ingenic DL PersonDet Promotion Version:1.1.2(00010102)  built:20201118-1147(4.7.2 simd)[0m
+random: Only 10/20 bytes of strong random data available
+random: Not enough entropy pool available for secure operations
+WPA: Not enough entropy in random pool for secure operations - update keys later when the first station connects
+ap0: interface state UNINITIALIZED->ENABLED
+ap0: AP-ENABLED 
+Dbg:hk_tuya_netMonitor_start ============================
+
+
+Dbg:hk_tuya_videoServer_start ============================
+
+
+Dbg:hk_tuya_qrcodeServer_start ============================
+
+
+Qrcode Thread start
+
+DDNS_CloseClient-close client
+DDNS_CloseClient-exec_buff:
+md module start
+persondet:FPS: 6.60
+Dbg:IPC_APP_Init_SDK WIFI_INIT_MODE_E init_mode : 1
+
+
+
+Dbg:SDK Version:<TUYA IPC SDK V:4.8.8 >
+
+< TUYA IOT SDK V:4.1.1 BS:30.01_PT:2.2_LAN:3.3_CAD:1.0.1_CD:1.0.0 >
+
+IPC DEFS < ENABLE_ECHO_SHOW:0 ENABLE_CHROMECAST:0 ENABLE_CLOUD_STORAGE:1 >'
+
+< BUILD AT:2020_12_31_10_34_56 BY humin FOR linux_wifi_wired AT mips-gcc472-glibc216-64bit-r2.3.3 >
+
+
+
+
+
+Dbg:Init Value.storage_path /mnt/flash/productinfo/tuyaconfig/
+
+Dbg:Init Value.upgrade_file_path /tmp/update.bin
+
+Dbg:Init Value.sd_base_path /mnt/flash/mmc/video/
+
+Dbg:Init Value.product_key yxkcpfgt9b4dpbin
+
+Dbg:Init Value.uuid hhwsc6be1c9d8b676329
+
+Dbg:Init Value.auth_key f9FHQWaCZNwkjvZl8sRsdYi1dRXwzAYm
+
+Dbg:Init Value.p2p_id 
+
+Dbg:Init Value.dev_sw_version 7.8.0
+
+Dbg:Init Value.max_p2p_user 2
+
+[IPC_APP_Set_Media_Info]--[62] s_media_info.video_codec E_CHANNEL_VIDEO_MAIN 4[IPC_APP_Set_Media_Info]--[83] s_media_info.video_codec E_CHANNEL_VIDEO_SUB 4Dbg:channel_enable:1 1 0
+
+Dbg:fps:20
+
+Dbg:gop:50
+
+Dbg:bitrate:3072 kbps
+
+Dbg:video_main_width:2304
+
+Dbg:video_main_height:1296
+
+Dbg:video_freq:90000
+
+Dbg:video_codec:4
+
+Dbg:audio_codec:105
+
+Dbg:audio_sample:8000
+
+Dbg:audio_databits:16
+
+Dbg:audio_channel:0
+
+Dbg:init ring buffer Channel:0 Enable:1
+
+cfq>> video_bitrate[0] = 3072 is out of range, change to 2048 now
+Dbg:video_bitrate 2048, video_fps 20
+
+Dbg:init ring buffer success. channel:0
+
+Dbg:init ring buffer Channel:1 Enable:1
+
+Dbg:video_bitrate 512, video_fps 20
+
+Dbg:init ring buffer success. channel:1
+
+Dbg:init ring buffer Channel:2 Enable:0
+
+Dbg:init ring buffer Channel:3 Enable:0
+
+Dbg:init ring buffer Channel:4 Enable:0
+
+Dbg:init ring buffer Channel:5 Enable:0
+
+Dbg:init ring buffer Channel:6 Enable:0
+
+Dbg:init ring buffer Channel:7 Enable:0
+
+Dbg:init ring buffer Channel:8 Enable:0
+
+Dbg:init ring buffer Channel:9 Enable:1
+
+Dbg:audio_sample 8000, audio_databits 16, audio_fps 25
+
+Dbg:init ring buffer success. channel:9
+
+Dbg:init ring buffer Channel:10 Enable:0
+
+Dbg:init ring buffer Channel:11 Enable:0
+
+Dbg:init ring buffer Channel:12 Enable:0
+
+Dbg:init ring buffer Channel:13 Enable:0
+
+Dbg:init ring buffer Channel:14 Enable:0
+
+Dbg:init ring buffer Channel:15 Enable:0
+
+[IPC_APP_Notify_LED_Sound_Status_CB]--[193] curr event:0 
+
+[01-01 18:12:15:0 TUYA Debug][tuya_iot_com_api.c:94] init fs. Path: /mnt/flash/productinfo/tuyaconfig/ 
+
+[01-01 18:12:15:86 TUYA Info][kv_storge.c:43] Init Kvs With File:/mnt/flash/productinfo/tuyaconfig/
+
+[01-01 18:12:15:86 TUYA Debug][simplekv.c:916] path:/mnt/flash/productinfo/tuyaconfig/
+
+[01-01 18:12:15:92 TUYA Debug][simplekv.c:952] get encrypt_key[���US����ykR��]
+
+[01-01 18:12:15:92 TUYA Debug][simplekv.c:983] both file exist
+
+[01-01 18:12:15:93 TUYA Debug][simplekv.c:280] size in: 0 and final: 28700 And mag_rec_max: 512
+
+[01-01 18:12:15:93 TUYA Debug][simplekv.c:295] create data hd success
+
+[01-01 18:12:15:93 TUYA Debug][simplekv.c:1026] read from normal file
+
+[01-01 18:12:15:95 TUYA Debug][simplekv.c:736] curr db is V2. No need to upgrade
+
+[01-01 18:12:15:97 TUYA Debug][simplekv.c:526] head check success
+
+[01-01 18:12:15:98 TUYA Debug][simplekv.c:629] read and check head success
+
+[01-01 18:12:15:98 TUYA Debug][simplekv.c:1041] read from normal file success
+
+[01-01 18:12:15:98 TUYA Debug][uni_thread.c:161] Init Thread Del Mgr
+
+[01-01 18:12:15:98 TUYA Debug][simplekv.c:1079] init from normal file success.
+
+[01-01 18:12:15:98 TUYA Debug][sys_timer.c:63] system timer has been inited
+
+[01-01 18:12:15:98 TUYA Debug][sys_timer.c:63] system timer has been inited
+
+[01-01 18:12:15:98 TUYA Debug][sys_timer.c:63] system timer has been inited
+
+[01-01 18:12:15:101 TUYA Err][online_log_serv.c:317] log stats ufread fail.
+
+[01-01 18:12:15:101 TUYA Debug][online_log_serv.c:581] log serv init success
+
+[01-01 18:12:15:101 TUYA Debug][ty_work_queue.c:22] init work queue. stack size:2560 pro:3 num:2
+
+[01-01 18:12:15:101 TUYA Debug][ty_work_queue.c:27] ty work queue create success
+
+Dbg:[IPC_APP_Init_SDK]--[189] tuya_ipc_init_sdk Success!
+
+
+[01-01 18:12:15:101 TUYA Debug][simplekv.c:1177] read key:gw_bi isFuzzy:0 skipCnt:0
+
+[01-01 18:12:15:101 TUYA Debug][simplekv.c:1217] find key:0 gw_bi
+
+[01-01 18:12:15:102 TUYA Debug][simplekv.c:1246] key:gw_bi find value.Len:160
+
+[01-01 18:12:15:102 TUYA Debug][tuya_ws_db.c:490] gw base read success
+
+[01-01 18:12:15:103 TUYA Debug][uni_thread.c:220] Thread:cmmod Exec Start. Set to Running Status
+
+[01-01 18:12:15:104 TUYA Debug][uni_thread.c:220] Thread:sys_timer Exec Start. Set to Running Status
+
+[01-01 18:12:15:105 TUYA Debug][sys_timer.c:34] system timer process run.
+
+
+[01-01 18:12:15:107 TUYA Debug][uni_thread.c:220] Thread:wk_th-1 Exec Start. Set to Running Status
+
+[01-01 18:12:15:108 TUYA Debug][uni_thread.c:220] Thread:wk_th-0 Exec Start. Set to Running Status
+
+[01-01 18:12:15:145 TUYA Debug][simplekv.c:1177] read key:gw_bi isFuzzy:0 skipCnt:0
+
+[01-01 18:12:15:145 TUYA Debug][simplekv.c:1217] find key:0 gw_bi
+
+[01-01 18:12:15:146 TUYA Debug][simplekv.c:1246] key:gw_bi find value.Len:160
+
+[01-01 18:12:15:146 TUYA Debug][tuya_ws_db.c:490] gw base read success
+
+[01-01 18:12:15:146 TUYA Notice][gw_intf.c:2226] serial_no:(null)
+
+Set Country Code:CN 
+
+[01-01 18:12:15:146 TUYA Debug][simplekv.c:1177] read key:gw_wsm isFuzzy:0 skipCnt:0
+
+[01-01 18:12:15:148 TUYA Debug][simplekv.c:1217] find key:1 gw_wsm
+
+[01-01 18:12:15:148 TUYA Debug][simplekv.c:1246] key:gw_wsm find value.Len:128
+
+[01-01 18:12:15:148 TUYA Debug][tuya_ws_db.c:610] gw_wsm read success
+
+[01-01 18:12:15:148 TUYA Notice][gw_intf.c:2255] gw_cntl.gw_wsm.stat:0
+
+[01-01 18:12:15:148 TUYA Notice][gw_intf.c:2258] gw_cntl.gw_wsm.nc_tp:2
+
+[01-01 18:12:15:148 TUYA Notice][gw_intf.c:2259] gw_cntl.gw_wsm.md:0
+
+[01-01 18:12:15:148 TUYA Debug][simplekv.c:1177] read key:gw_di isFuzzy:0 skipCnt:0
+
+[01-01 18:12:15:148 TUYA Debug][simplekv.c:1217] find key:2 gw_di
+
+[01-01 18:12:15:148 TUYA Debug][simplekv.c:1246] key:gw_di find value.Len:304
+
+[01-01 18:12:15:148 TUYA Debug][tuya_ws_db.c:756] gw_di read success
+
+[01-01 18:12:15:148 TUYA Notice][gw_intf.c:2292] gw_cntl.gw_if.abi:0 input:0
+
+[01-01 18:12:15:150 TUYA Notice][gw_intf.c:2293] gw_cntl.gw_if.product_key:yxkcpfgt9b4dpbin, input:yxkcpfgt9b4dpbin
+
+[01-01 18:12:15:150 TUYA Notice][gw_intf.c:2294] gw_cntl.gw_if.tp:0, input:0
+
+[01-01 18:12:15:150 TUYA Debug][simplekv.c:1177] read key:gw_ai isFuzzy:0 skipCnt:0
+
+[01-01 18:12:15:150 TUYA Debug][simplekv.c:1217] find key:3 gw_ai
+
+[01-01 18:12:15:150 TUYA Debug][simplekv.c:1246] key:gw_ai find value.Len:176
+
+[01-01 18:12:15:194 TUYA Debug][tuya_ws_db.c:851] gw_ai read success
+
+[01-01 18:12:15:194 TUYA Debug][gw_intf.c:2452] enter success_proc
+
+Exec Cmd:ifconfig wlan0 up 
+
+[01-01 18:12:15:197 TUYA Debug][tuya_iot_wifi_api.c:365] register wifi network monitor. interval:5
+
+[01-01 18:12:15:197 TUYA Debug][app_agent.c:333] TUYA Mode, start TUYA thread to listen Lan
+
+[01-01 18:12:15:198 TUYA Debug][app_agent.c:363] cmmod register finish 1
+
+Dbg:[IPC_APP_Init_SDK]--[198] tuya_ipc_start_sdk Success!
+
+
+Dbg:[IPC_APP_Init_SDK]--[201] tuyaRegisterSta ==== 0!
+
+
+hank_Play_AudioFile pri 2, file /mnt/flash/Server/resource/audio/en/1.g711u, repeat 1, duration -1, block 1
+hank_Play_AudioFile_now begin /mnt/flash/Server/resource/audio/en/1.g711u
+[01-01 18:12:15:201 TUYA Debug][uni_thread.c:220] Thread:lpc_task Exec Start. Set to Running Status
+
+[01-01 18:12:15:202 TUYA Debug][app_agent.c:890] begint to execute __lpc_task
+
+[01-01 18:12:15:203 TUYA Debug][app_agent.c:917] Setup TCP Server On Port:6668
+
+ifconfig: SIOCSIFFLAGS: Device or resource busy
+hwl_wf_wk_mode_set current mode 3
+
+WIFI Set Mode 3
+
+hwl_wf_get_mac
+
+WIFI Get MAC 00-00-00-00-00-00
+
+Start AP SSID:SmartLife-0000 
+
+[01-01 18:12:15:263 TUYA Debug][app_agent.c:588] start thread to listen udp
+
+[01-01 18:12:15:266 TUYA Debug][uni_thread.c:220] Thread:udp_ap_v3 Exec Start. Set to Running Status
+
+[01-01 18:12:15:266 TUYA Debug][app_agent.c:418] start udp ap thread
+
+persondet:FPS: 5.85
+hank_Play_AudioFile_now /mnt/flash/Server/resource/audio/en/1.g711u end
+total_data_len 19902, play_time 2400, audio_time 2487
+Wifi_Scan wifiDriver_mode ==== 0 gs_sta.s_fd === 0
+Wifi_Scan hotspotNum 1
+Dbg:Wifi_HotspotList.num ==== 1
+
+
+set_qrConfig_startus qrCodeEnable === 1
+
+sdk_app : READ from fifo : head.symbol=SQR
+sdk_app : find_section() : symbol=SQR
+sdk_app : found fun_name is SQR
+hank_Play_AudioFile pri 2, file /mnt/flash/Server/resource/audio/en/3.g711u, repeat 1, duration -1, block 1
+hank_Play_AudioFile_now begin /mnt/flash/Server/resource/audio/en/3.g711u
+sdk_app : process req : qmsg.cType=59,fun_name=SQR
+[mw_img_set_QR_Start]--[750] pEnable ============ 1
+scan qrFileName /tmp/qrcode.yuv not exsit!
+qrFileName /tmp/qrcode.yuv fileLength 307200
+persondet:FPS: 6.37
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+_WIFI_GetLinkQuality() = -2, s32Quality = -1
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+persondet:FPS: 4.56
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+[01-01 18:12:20:202 TUYA Debug][tuya_iot_wifi_api.c:347] wifi netstat changed to:2  -->>
+
+Dbg:__IPC_APP_Get_Net_Status_cb Net status change to:2
+
+[01-01 18:12:20:202 TUYA Debug][tuya_iot_wifi_api.c:350] wifi netstat changed to:2  <<--
+
+ifconfig: eth0: error fetching interface information: Device not found
+[01-01 18:12:20:293 TUYA Debug][app_agent.c:702] Create UDP Socket To Broadcast
+
+[01-01 18:12:20:293 TUYA Err][app_agent.c:833] sendto Failed,len:172 ret:-1,errno:-18 port:6667
+
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+persondet:FPS: 4.58
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+x_max_steps=3250,y_max_steps=1150,x_cur_step=1625,y_cur_step=575
+hank_Play_AudioFile_now /mnt/flash/Server/resource/audio/en/3.g711u end
+total_data_len 42086, play_time 5200, audio_time 5260
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+persondet:FPS: 4.51
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+ifconfig: eth0: error fetching interface information: Device not found
+[01-01 18:12:25:301 TUYA Debug][app_agent.c:702] Create UDP Socket To Broadcast
+
+[01-01 18:12:25:301 TUYA Err][app_agent.c:833] sendto Failed,len:172 ret:-1,errno:-18 port:6667
+
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+persondet:FPS: 4.60
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+persondet:FPS: 4.44
+qrFileName /tmp/qrcode.yuv fileLength 307200
+qrFileName /tmp/qrcode.yuv fileLength 307200
+_WIFI_GetLinkQuality() = -2, s32Quality = -1
